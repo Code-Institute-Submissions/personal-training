@@ -1,0 +1,19 @@
+/*------------------- colours */
+.bg-color-header{
+    background-color:#96858F; /*(dusty)*/
+}
+.bg-color-section {
+    background-color: #D5D5D5; /*(paper)*/
+}
+.bg-color-footer {
+    background-color: #6D7993; /*(lavendar)*/
+}
+/*.bg-color- {
+    background-color: #9099A2 /*(overcast)*/
+}*/
+
+/*------------------- Header */
+
+#nav {
+    background-color: #fafafa;
+}
