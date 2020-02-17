@@ -1,19 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
 /*------------------- colours */
 .bg-color-header{
-    background-color:#96858F; /*(dusty)*/
+    background-color:#6D7993; /*(lavendar)*/
 }
 .bg-color-section {
     background-color: #D5D5D5; /*(paper)*/
 }
 .bg-color-footer {
-    background-color: #6D7993; /*(lavendar)*/
+    background-color: #96858F; /*(dusty)*/
 }
 /*.bg-color- {
     background-color: #9099A2 /*(overcast)*/
-}*/
+
 
 /*------------------- Header */
 
-#nav {
-    background-color: #fafafa;
+.navbar {
+    background-color: rgb(75, 83, 102);
+    margin-top: 15px;
+    margin-right: 15px;
+    
 }
+.navbar li a{
+    text-align: center;
+    font-family: "Cinzel", sans-serif;
+    color: #d5d5d5;
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    text-align: center; 
+}
+/*------------------- Section */
+footer{
+    font-family: "Cinzel", serif;
+    color: #9099A2;
+    font-size:2em;
+    text-transform: 
+}
+
+/*------------------- Section */
