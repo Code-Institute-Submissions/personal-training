@@ -2,7 +2,7 @@
 
 /*------------------- colours */
 .bg-color-header{
-    background-color:#6D7993; /*(lavendar)*/
+    background-color: #6d6e71; /*(lavendar)*/
 }
 .bg-color-section {
     background-color: #D5D5D5; /*(paper)*/
@@ -17,8 +17,7 @@
 /*------------------- Header */
 
 .navbar {
-    background-color: rgb(75, 83, 102);
-    margin-top: 15px;
+    background-color: #6d6e71;
     margin-right: 15px;
     
 }
@@ -29,6 +28,13 @@
     letter-spacing: 4px;
     font-size: 1.2em;
     font-weight: 600;
+}
+.navbar li a:hover {
+    color: #4a245b;
+}
+ul {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
 }
 *, ::after, ::before {
     box-sizing: border-box;
