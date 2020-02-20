@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
+/* center icons in .navbar */
+/* add carousel with upto 5 images */
+
+
 /*------------------- colours */
 .bg-color-header{
     background-color: #6d6e71; /*(lavendar)*/
@@ -16,10 +20,19 @@
 
 /*------------------- Header */
 
+header {
+    height:200px;
+}
+.half-height {
+    height:50%;
+}
 .navbar {
     background-color: #6d6e71;
     margin-right: 15px;
-    
+    margin-bottom: 0rem;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    width: 100%;
 }
 .navbar li a{
     text-align: center;
@@ -28,7 +41,8 @@
     letter-spacing: 4px;
     font-size: 1.2em;
     font-weight: 600;
-    display:block;
+    display: inline-block; 
+    position: relative;  
 }
 
 .hvr-icon-grow:hover {
@@ -36,20 +50,14 @@
     font-size: 1.4rem;
     text-decoration:none;
 }
-ul {
-    margin-top: 10rem;
-    margin-bottom: 0rem;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-    text-align: center; 
-}
+
+
 /*------------------- Section */
 footer{
     font-family: "Cinzel", serif;
     color: #9099A2;
     font-size:2em;
-    text-transform: 
+    
 }
 
 /*------------------- Section */
