@@ -28,9 +28,13 @@
     letter-spacing: 4px;
     font-size: 1.2em;
     font-weight: 600;
+    display:block;
 }
-.navbar li a:hover {
-    color: #4a245b;
+
+.hvr-icon-grow:hover {
+    color: #3e5087;
+    font-size: 1.4rem;
+    text-decoration:none;
 }
 ul {
     margin-top: 10rem;
