@@ -25,43 +25,41 @@
 <body>
     <header class="bg-color-header">
         <!--        Navbar-->
-        <nav class="navbar navbar-expand-sm">
-            <a href="index.html" target="_blank" class="navbar-brand">
+        <nav class="navbar bg-dark bg-dark navbar-expand-sm">
+            <a class="navbar-brand" href="index.html" target="_blank">
                 <image src="assets/images/dc_logo.png" alt="picture of brand logo"></image>
             </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu">
-                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span><!--<i class="fas fa-bars"></i>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation" aria-pressed="true">
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="navbar-nav collapse navbar-collapse">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active hvr-icon-grow" href="index.html">
-                            <i class="fas fa-home"></i>
-                            <br>Home
+                        <a class="active nav-link hvr-icon-grow" href="index.html">
+                            <div class="d-none d-sm-inline"><i class="fas fa-home"></i><br></div>
+                            Home
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="results.html" class="nav-link hvr-icon-grow">
-                            <i class="fas fa-camera"></i><br>
+                            <div class="d-none d-sm-inline"><i class="fas fa-camera"></i><br></div>
                             Results
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="training.html" class="nav-link hvr-icon-grow">
-                            <i class="fas fa-dumbbell"></i><br>
+                            <div class="d-none d-sm-inline"><i class="fas fa-dumbbell"></i><br></div>
                             Training
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link hvr-icon-grow">
-                            <span class="center"><i class="fas fa-comment"></i></span><br>
+                            <div class="d-none d-sm-inline"><i class="fas fa-comment"></i><br></div>
                             Contact
                         </a>
                     </li>
                 </ul>
             </div>
-            </div>
-
         </nav>
     </header>
     <section class="bg-color-section">

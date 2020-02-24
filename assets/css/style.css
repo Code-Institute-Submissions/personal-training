@@ -32,36 +32,47 @@ ul {
     padding-inline-end: 20px;
     width: 100%;
 }
+ul li a{
+    text-align: center;
+    font-family: "Cinzel", sans-serif;
+    color: #d5d5d5;
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline; 
+    position: relative;  
+}
+.nav-item>.active {
+    color: #3e5087;
+    font-size: 1.4rem;
+    text-decoration:none;
+}
+ul li a:hover{
+    color:#3e5087;
+}
+.navbar-toggler {
+    text-decoration: none ;
+    color: #d5d5d5;
+}
+.navbar-toggler:active, .navbar-toggler:checked {
+    text-decoration: none;
+    color: #3e5087;
+}
 
 
 @media screen and (min-width: 576px){
-    navbar{
-        position:relative;
-        display: inline-flex;
-        flex-wrap: wrap;
-        align-items: normal;
+    .navbar{
+        position: sticky;
     }
     ul {
         background-color: #6d6e71;
-        margin-right: 15px;
-        width: 100%;
-        height:100%;
+        display: flex;
+        justify-content: space-between;
     }
-    ul li a{
-        text-align: center;
-        font-family: "Cinzel", sans-serif;
-        color: #d5d5d5;
-        letter-spacing: 4px;
-        font-size: 1.2em;
-        font-weight: 600;
-        display: inline-flex; 
-        position: relative;  
+    ul li a  {
+        justi
     }
-    ul li a:active {
-        color: #5b6279;
-        font-size: 1.4rem;
-        text-decoration:none;
-    }
+   
     .hvr-icon-grow:hover {
         color: #3e5087;
         font-size: 1.4rem;
