@@ -21,9 +21,19 @@
 
 
 nav{
-    width:100%;
-    height:15%;
+   width: 100%;
 }
+.navbar {
+    
+}
+#logo {
+    position:relative;
+    margin: auto ;
+}
+#navbar-menu{
+    max-height: 50%;
+}
+
 ul {
     background-color: #6d6e71;
     margin-right: 15px;
@@ -59,20 +69,24 @@ ul li a:hover{
     color: #3e5087;
 }
 
-
 @media screen and (min-width: 576px){
     .navbar{
-        position: sticky;
+        display: block;
     }
+    #navbar-brand {
+        position: absolute;
+        justify-content: auto;
+    }
+    #navbar-menu{
+        height: inherit;
+    }
+   
     ul {
         background-color: #6d6e71;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    ul li a  {
-        justi
-    }
-   
+    
     .hvr-icon-grow:hover {
         color: #3e5087;
         font-size: 1.4rem;
@@ -81,12 +95,26 @@ ul li a:hover{
 
 }
 @media screen and (min-width: 992px){
+    .navbar {
+        display: inline-flex;
+    }
+    #logo {
 
-    ul {
-        height: 50%;
-        width:100%;
-        margin-right:2.5%;
+    }
+    #navbar-menu {
+        width:66%;
+        height: 200px;
+        float: right;
+        align-items: flex-end;
+    }
 
+    ul li{
+        margin-left:auto;
+    }
+    .navbar-nav {
+        margin-left: auto;
+        list-style: none;
+        width: 66%;
     }
 }
 /*------------------- Section */
