@@ -34,11 +34,52 @@
       /* not good when adjusted to slightly above mobile size! */
     
 }
-.navbar-toggler span .icon-bar{
-    text-decoration: none ;
-    background-color: #d5d5d5;
-    margin: auto 0 0;
+.collapsed .icon-bar{
+    width:22px;
+    height: 2px;
+    background-color: #3e5087;
+    display:block;
+    transition: all 0.2s;
+    margin: 4px;
 }
+.icon-bar {
+    width:22px;
+    height:2px;
+    background-color: #D5D5D5;
+    display:block;
+    transition: all 0.2s;
+    margin-top: 4px;
+}
+.navbar-toggler{
+    border: none;
+    background: transparent !important;
+    margin: auto 0 10px 10px;
+}
+.navbar-toggler .top-bar{
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+}
+.navbar-toggler .bottom-bar{
+    transform:rotate(-45deg);
+    transform-origin:10% 90%;
+}
+.navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity:1;
+}
+.navbar-toggler.collapsed .bottom-bar{
+    transform:rotate(0);
+}
+    /*.navbar-toggler-icon{
+    text-decoration: none ;
+    background-color: #141214;
+    margin: auto 0 0;
+}*/
 /* .navbar-toggler {
     text-decoration: none ;
     color: #d5d5d5;
