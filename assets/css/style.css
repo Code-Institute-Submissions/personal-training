@@ -20,13 +20,37 @@
 /*------------------- Header */
 
 
-nav{
+.navbar{
    width: 100%;
+   display: block;
+   position: absolute;
+}
+#logo {
+    display: inline-flex;
+    width:100%;
+}
+.navbar-brand {
+      /* not good when adjusted to slightly above mobile size! */
+    
+}
+.navbar-toggler {
+    text-decoration: none ;
+    color: #d5d5d5;
+    margin: auto 0 0;
+    
 }
 
-#navbar-menu{
-    max-height: 50%;
+.navbar-toggler:pressed {
+    text-decoration: none;
+    color: #3e5087;
 }
+#navbar-menu{
+
+}
+#logo {
+    
+}
+
 
 ul {
     background-color: #6d6e71;
@@ -51,30 +75,25 @@ ul li a{
 ul li a:hover{
     color:#3e5087;
 }
-.navbar-toggler {
-    text-decoration: none ;
-    color: #d5d5d5;
-}
-.navbar-toggler:active, .navbar-toggler:checked {
-    text-decoration: none;
-    color: #3e5087;
-}
+
 
 @media screen and (min-width: 576px){
     .navbar{
-        display: block;
+        
+    }
+    #logo{
+        width: 100%;
     }
     .navbar-brand {
         position: relative;
         margin-left: 50%;
         transform: translateX(-50%);
     }
-
     #navbar-menu{
-      
+
     }
    
-    ul {
+    .navbar-nav {
         background-color: #6d6e71;
         display: flex;
         justify-content: space-around;
@@ -87,13 +106,18 @@ ul li a:hover{
     }
 
 }
-@media screen and (min-width: 992px){
+@media screen and (min-width: 970px){
     .navbar {
         display: inline-flex;
     }
-    
+    #logo{
+        width:40%;
+    }
+    .navbar-brand{
+        float:
+    }
     #navbar-menu {
-        width: 66%;
+        width: 60%;
         height: 200px;
         float: right;
         align-items: flex-end;
@@ -103,9 +127,8 @@ ul li a:hover{
         margin-left:auto;
     }
     .navbar-nav {
-        margin-left: auto;
         list-style: none;
-        width: 66%;
+        width: 100%;
     }
 }
 /*------------------- Section */
