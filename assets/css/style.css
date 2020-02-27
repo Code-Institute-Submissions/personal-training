@@ -28,36 +28,37 @@
 #logo {
     display: inline-flex;
     width:100%;
+    justify-content: space-between;
 }
 .navbar-brand {
       /* not good when adjusted to slightly above mobile size! */
     
 }
-.navbar-toggler {
+.navbar-toggler span .icon-bar{
+    text-decoration: none ;
+    background-color: #d5d5d5;
+    margin: auto 0 0;
+}
+/* .navbar-toggler {
     text-decoration: none ;
     color: #d5d5d5;
     margin: auto 0 0;
     
 }
 
-.navbar-toggler:pressed {
+.navbar-toggler:active {
     text-decoration: none;
     color: #3e5087;
-}
+} */
 #navbar-menu{
 
 }
-#logo {
-    
-}
-
-
-ul {
+.navbar-nav {
     background-color: #6d6e71;
     margin-bottom: 0rem;
     width: 100%;
 }
-ul li a{
+.navbar-nav li a{
     text-align: center;
     font-family: "Cinzel", sans-serif;
     color: #d5d5d5;
@@ -67,15 +68,14 @@ ul li a{
     display: inline; 
     position: relative;  
 }
+.navbar-nav li a:hover{
+    color:#3e5087;
+}
 .nav-item>.active {
     color: #3e5087;
     font-size: 1.4rem;
     text-decoration:none;
 }
-ul li a:hover{
-    color:#3e5087;
-}
-
 
 @media screen and (min-width: 576px){
     .navbar{
@@ -109,23 +109,22 @@ ul li a:hover{
 @media screen and (min-width: 970px){
     .navbar {
         display: inline-flex;
+        justify-content: space-evenly;
     }
     #logo{
-        width:40%;
+        width:33%;
     }
     .navbar-brand{
-        float:
+        margin-left: 0;
+        transform: translateX(0%);
     }
     #navbar-menu {
-        width: 60%;
+        width: 67%;
         height: 200px;
-        float: right;
         align-items: flex-end;
     }
 
-    ul li{
-        margin-left:auto;
-    }
+   
     .navbar-nav {
         list-style: none;
         width: 100%;
