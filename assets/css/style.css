@@ -4,18 +4,19 @@
 
 
 /*------------------- colours */
-.bg-color-header{
-    background-color: #6d6e71; /*(lavendar)*/
+.bg-color-nav{
+    background-color: #6d6e71; 
 }
 .bg-color-section {
-    background-color: #D5D5D5; /*(paper)*/
+    background-color: #D5D5D5; /**/
 }
 .bg-color-footer {
-    background-color: #96858F; /*(dusty)*/
+    background-color: #3e5087 ; /**/
 }
-/*.bg-color- {
-    background-color: #9099A2 /*(overcast)*/
-
+.bg-color- {
+   /* background-color: #6d6e71; /*gray*/
+}
+   /* #141214  /* black */
 
 /*------------------- Header */
 
@@ -23,21 +24,22 @@
 .navbar{
    width: 100%;
    display: block;
-   position: absolute;
+   background-color: #6d6e71;
+   /*position: relative;*/
+  
+
 }
 #logo {
     display: inline-flex;
     width:100%;
     justify-content: space-between;
 }
-.navbar-brand {
-      /* not good when adjusted to slightly above mobile size! */
-    
-}
+
+/*--------------------- Icon Bar Animation */
 .collapsed .icon-bar{
     width:22px;
     height: 2px;
-    background-color: #3e5087;
+    background-color: #141214;
     display:block;
     transition: all 0.2s;
     margin: 4px;
@@ -75,32 +77,39 @@
 .navbar-toggler.collapsed .bottom-bar{
     transform:rotate(0);
 }
-    /*.navbar-toggler-icon{
-    text-decoration: none ;
-    background-color: #141214;
-    margin: auto 0 0;
-}*/
-/* .navbar-toggler {
-    text-decoration: none ;
-    color: #d5d5d5;
-    margin: auto 0 0;
-    
+button:focus, select:focus {
+    outline:none;
 }
-
 .navbar-toggler:active {
     text-decoration: none;
     color: #3e5087;
-} */
-#navbar-menu{
-
+} 
+/*--------------------- Icon Bar Animation - End */
+@media screen and (max-width: 575px){
+    .navbar-nav li{
+        padding: 12px;
+        con
+    }
+    .nav-link{
+        width:100%;
+    }
+    .nav-link:focus {
+        background-color: #d5d5d5;
+        color: #6d6e71;
+        outline: none;  
+    }
 }
 .navbar-nav {
     background-color: #6d6e71;
     margin-bottom: 0rem;
     width: 100%;
 }
+.nav-link{
+    width:100%;
+}
 .navbar-nav li a{
     text-align: center;
+    margin-top: 2px;
     font-family: "Cinzel", sans-serif;
     color: #d5d5d5;
     letter-spacing: 4px;
@@ -111,16 +120,16 @@
 }
 .navbar-nav li a:hover{
     color:#3e5087;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 .nav-item>.active {
-    color: #3e5087;
-    font-size: 1.4rem;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem;
     text-decoration:none;
 }
 
 @media screen and (min-width: 576px){
-    .navbar{
-        
+    .navbar{   
     }
     #logo{
         width: 100%;
@@ -138,10 +147,17 @@
         background-color: #6d6e71;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+    }
+    .navbar-nav li {
+        display:flex;
+        text-align:center;
+        display:inline-block;
+
     }
     
     .hvr-icon-grow:hover {
-        color: #3e5087;
+        color: #3e5087 !important;
         font-size: 1.4rem;
         text-decoration:none;
     }
