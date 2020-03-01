@@ -8,7 +8,7 @@
 }
 
 .bg-color-section {
-    background-color: #D5D5D5;
+    background-color: #141214;
     /**/
 }
 
@@ -17,11 +17,11 @@
     /**/
 }
 
-.bg-color- {
+ {
     /* background-color: #6d6e71; /*gray*/
 }
 
-/* #141214  /* black */
+/*  #D5D5D5 white */
 
 /*------------------- Header */
 
@@ -29,7 +29,6 @@
     width: 100%;
     display: block;
     background-color: #6d6e71;
-    /*position: relative;*/
 }
 
 #logo {
@@ -102,6 +101,8 @@ button:focus {
 
 /*--------------------- Icon Bar Animation - End */
 
+/*--------------------- Small Res Styling */
+
 @media screen and (max-width: 575px) {
     .navbar-nav li {
         padding: 12px;
@@ -121,6 +122,7 @@ button:focus {
         filter:invert(100%);
     }
 }
+/*--------------------- Small Res Styling End */
 
 .navbar-nav {
     background-color: #6d6e71;
@@ -154,6 +156,7 @@ button:focus {
     font-size: 1.3rem;
     text-decoration: none;
 }
+/*--------------------- Tablet Styling */
 
 @media screen and (min-width: 576px) {
     
@@ -207,6 +210,14 @@ button:focus {
 }
 
 /*------------------- Section */
+.image-slider {
+    height:50%;
+    width:66%;
+    background-color: #0a060a!important;
+    margin-left: 16.5%;
+}
+.carousel-item{
+}
 
 footer {
     font-family: "Cinzel", serif;
