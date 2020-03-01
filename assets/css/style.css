@@ -1,113 +1,138 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-
 /* add carousel with upto 5 images */
 
-
 /*------------------- colours */
-.bg-color-nav{
-    background-color: #6d6e71; 
+
+.bg-color-nav {
+    background-color: #6d6e71;
 }
+
 .bg-color-section {
-    background-color: #D5D5D5; /**/
+    background-color: #D5D5D5;
+    /**/
 }
+
 .bg-color-footer {
-    background-color: #3e5087 ; /**/
+    background-color: #3e5087;
+    /**/
 }
+
 .bg-color- {
-   /* background-color: #6d6e71; /*gray*/
+    /* background-color: #6d6e71; /*gray*/
 }
-   /* #141214  /* black */
+
+/* #141214  /* black */
 
 /*------------------- Header */
 
-
-.navbar{
-   width: 100%;
-   display: block;
-   background-color: #6d6e71;
-   /*position: relative;*/
-  
-
+.navbar {
+    width: 100%;
+    display: block;
+    background-color: #6d6e71;
+    /*position: relative;*/
 }
+
 #logo {
     display: inline-flex;
-    width:100%;
+    width: 100%;
     justify-content: space-between;
 }
 
 /*--------------------- Icon Bar Animation */
-.collapsed .icon-bar{
-    width:22px;
+
+.collapsed .icon-bar {
+    width: 22px;
     height: 2px;
     background-color: #141214;
-    display:block;
+    display: block;
     transition: all 0.2s;
     margin: 4px;
 }
+
 .icon-bar {
-    width:22px;
-    height:2px;
+    width: 22px;
+    height: 2px;
     background-color: #D5D5D5;
-    display:block;
+    display: block;
     transition: all 0.2s;
     margin-top: 4px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none;
     background: transparent !important;
     margin: auto 0 10px 10px;
 }
-.navbar-toggler .top-bar{
+
+.navbar-toggler .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
 }
-.navbar-toggler .middle-bar{
+
+.navbar-toggler .middle-bar {
     opacity: 0;
 }
-.navbar-toggler .bottom-bar{
-    transform:rotate(-45deg);
-    transform-origin:10% 90%;
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
 }
-.navbar-toggler.collapsed .top-bar{
+
+.navbar-toggler.collapsed .top-bar {
     transform: rotate(0);
 }
-.navbar-toggler.collapsed .middle-bar{
-    opacity:1;
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
 }
-.navbar-toggler.collapsed .bottom-bar{
-    transform:rotate(0);
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
 }
-button:focus, select:focus {
-    outline:none;
+
+button:focus {
+    outline: none;
+    filter: invert(75%);
 }
+
 .navbar-toggler:active {
     text-decoration: none;
     color: #3e5087;
-} 
+}
+
 /*--------------------- Icon Bar Animation - End */
-@media screen and (max-width: 575px){
-    .navbar-nav li{
+
+@media screen and (max-width: 575px) {
+    .navbar-nav li {
         padding: 12px;
-        con
     }
-    .nav-link{
-        width:100%;
+    .navbar .nav-link {
+        display: flex;
+        padding-left: 5%;
     }
     .nav-link:focus {
         background-color: #d5d5d5;
         color: #6d6e71;
-        outline: none;  
+        outline: none;
+    }
+    .navbar-brand:focus, image:focus {
+        outline: none;
+        -webkit-filter:invert(100%);
+        filter:invert(100%);
     }
 }
+
 .navbar-nav {
     background-color: #6d6e71;
     margin-bottom: 0rem;
     width: 100%;
 }
-.nav-link{
-    width:100%;
+
+.nav-link {
+    width: 100%;
 }
-.navbar-nav li a{
+
+.navbar-nav li a {
     text-align: center;
     margin-top: 2px;
     font-family: "Cinzel", sans-serif;
@@ -115,23 +140,24 @@ button:focus, select:focus {
     letter-spacing: 4px;
     font-size: 1.2em;
     font-weight: 600;
-    display: inline; 
-    position: relative;  
+    display: inline;
+    position: relative;
 }
-.navbar-nav li a:hover{
-    color:#3e5087;
+
+.navbar-nav li a:hover {
+    color: #3e5087;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
+
 .nav-item>.active {
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
     font-size: 1.3rem;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-@media screen and (min-width: 576px){
-    .navbar{   
-    }
-    #logo{
+@media screen and (min-width: 576px) {
+    
+    #logo {
         width: 100%;
     }
     .navbar-brand {
@@ -139,10 +165,6 @@ button:focus, select:focus {
         margin-left: 50%;
         transform: translateX(-50%);
     }
-    #navbar-menu{
-
-    }
-   
     .navbar-nav {
         background-color: #6d6e71;
         display: flex;
@@ -150,28 +172,26 @@ button:focus, select:focus {
         align-items: center;
     }
     .navbar-nav li {
-        display:flex;
-        text-align:center;
-        display:inline-block;
-
+        display: flex;
+        text-align: center;
+        display: inline-block;
     }
-    
     .hvr-icon-grow:hover {
         color: #3e5087 !important;
         font-size: 1.4rem;
-        text-decoration:none;
+        text-decoration: none;
     }
-
 }
-@media screen and (min-width: 970px){
+
+@media screen and (min-width: 970px) {
     .navbar {
         display: inline-flex;
         justify-content: space-evenly;
     }
-    #logo{
-        width:33%;
+    #logo {
+        width: 33%;
     }
-    .navbar-brand{
+    .navbar-brand {
         margin-left: 0;
         transform: translateX(0%);
     }
@@ -180,19 +200,18 @@ button:focus, select:focus {
         height: 200px;
         align-items: flex-end;
     }
-
-   
     .navbar-nav {
         list-style: none;
         width: 100%;
     }
 }
+
 /*------------------- Section */
-footer{
+
+footer {
     font-family: "Cinzel", serif;
     color: #9099A2;
-    font-size:2em;
-    
+    font-size: 2em;
 }
 
 /*------------------- Section */
