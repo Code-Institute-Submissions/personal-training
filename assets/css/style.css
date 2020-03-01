@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat:200&display=swap');
 /* add carousel with upto 5 images */
 
 /*------------------- colours */
 
 .bg-color-nav {
-    background-color: #6d6e71;
+    background-color: #435484;
 }
 
 .bg-color-section {
@@ -13,8 +14,11 @@
 }
 
 .bg-color-footer {
-    background-color: #3e5087;
+    background-color: #555e7c;
     /**/
+}
+.bg-color-body{
+    background-color:#6d6e71;
 }
 
  {
@@ -28,7 +32,7 @@
 .navbar {
     width: 100%;
     display: block;
-    background-color: #6d6e71;
+    
 }
 
 #logo {
@@ -125,7 +129,7 @@ button:focus {
 /*--------------------- Small Res Styling End */
 
 .navbar-nav {
-    background-color: #6d6e71;
+    background-color: #435484;
     margin-bottom: 0rem;
     width: 100%;
 }
@@ -137,24 +141,24 @@ button:focus {
 .navbar-nav li a {
     text-align: center;
     margin-top: 2px;
-    font-family: "Cinzel", sans-serif;
-    color: #d5d5d5;
+    font-family: "Monserrat", sans-serif; /*"Cinzel", sans-serif*/
+    color: #353436;
     letter-spacing: 4px;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 200;
     display: inline;
     position: relative;
 }
 
 .navbar-nav li a:hover {
-    color: #3e5087;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    color:#d5d5d5;
+
 }
 
 .nav-item>.active {
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
-    font-size: 1.3rem;
     text-decoration: none;
+    color: #211d25e7;
+
 }
 /*--------------------- Tablet Styling */
 
@@ -169,7 +173,7 @@ button:focus {
         transform: translateX(-50%);
     }
     .navbar-nav {
-        background-color: #6d6e71;
+        background-color: inherit;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -180,7 +184,7 @@ button:focus {
         display: inline-block;
     }
     .hvr-icon-grow:hover {
-        color: #3e5087 !important;
+        color: #d5d5d5 !important;
         font-size: 1.4rem;
         text-decoration: none;
     }
@@ -213,16 +217,18 @@ button:focus {
 .image-slider {
     height:50%;
     width:66%;
-    background-color: #0a060a!important;
+    background-color: ;
     margin-left: 16.5%;
 }
 .carousel-item{
 }
 
 footer {
-    font-family: "Cinzel", serif;
+    position: absolute;
+    font-family: "Monserrat", serif;
     color: #9099A2;
     font-size: 2em;
+    margin-bottom: 0em;
 }
 
 /*------------------- Section */
