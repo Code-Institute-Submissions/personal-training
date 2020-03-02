@@ -17,11 +17,12 @@
     background-color: #555e7c;
     /**/
 }
-.bg-color-body{
-    background-color:#6d6e71;
+
+.bg-color-body {
+    background-color: #6d6e71;
 }
 
- {
+    {
     /* background-color: #6d6e71; /*gray*/
 }
 
@@ -32,7 +33,6 @@
 .navbar {
     width: 100%;
     display: block;
-    
 }
 
 .logo-container {
@@ -121,10 +121,11 @@ button:focus {
     }
     .navbar-brand:focus, image:focus {
         outline: none;
-        -webkit-filter:invert(100%);
-        filter:invert(100%);
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
     }
 }
+
 /*--------------------- Small Res Styling End */
 
 .navbar-nav {
@@ -140,7 +141,8 @@ button:focus {
 .navbar-nav li a {
     text-align: center;
     margin-top: 2px;
-    font-family: "Monserrat", sans-serif; /*"Cinzel", sans-serif*/
+    font-family: "Monserrat", sans-serif;
+    /*"Cinzel", sans-serif*/
     color: #353436;
     letter-spacing: 4px;
     font-size: 1.2em;
@@ -150,26 +152,24 @@ button:focus {
 }
 
 .navbar-nav li a:hover {
-    color:#d5d5d5;
-
+    color: #d5d5d5;
 }
 
 .nav-item>.active {
     text-decoration: none;
     color: #211d25e7;
-
 }
+
 /*--------------------- Tablet Styling */
 
 @media screen and (min-width: 576px) {
-    
     .logo-container {
         width: 100%;
         justify-content: center;
     }
     .logo-container #logo {
-        height:100%;
-        width:100%;
+        height: 100%;
+        width: 100%;
     }
     .navbar-brand {
         height: 120px;
@@ -203,14 +203,13 @@ button:focus {
         justify-content: space-evenly;
     }
     .logo-container #logo {
-        height:90%;
+        height: 90%;
     }
     .logo-container {
         width: 33%;
         height: 100px;
         justify-content: flex-start;
     }
-
     #navbar-menu {
         width: 67%;
         height: 100px;
@@ -223,37 +222,52 @@ button:focus {
 }
 
 /*------------------- Carousel section */
+
 .image-slider {
-    height:50%;
-    width:66%;
+    height: 50%;
+    width: 66%;
     background-color: ;
     margin-left: 16.5%;
 }
-.carousel-item{
-}
+
+.carousel-item {}
 
 /*------------------- Carousel section - End */
 
 /*------------------- Hero Home section */
-    .jumbotron {
-        background-color: #24222d;
-        /*max-height: 50vh;*/
-    }
-    h1 {
-        font-family: "Monserrat", sans-serif; /*"Cinzel", sans-serif*/
-        color: #d5d5d5;
-        letter-spacing: 4px;
-    }
-    .jumbo-text p {
-        display: inline;
-        font-family: "Lora" , sans-serif;
-        color:#d5d5d5;
-        font-size: 2em;
-    }
-    span {
-        font-weight:bold;
-    }
-@media (min-width: 768px){
+
+.jumbotron {
+    background-color: #24222d;
+    /*max-height: 50vh;*/
+}
+
+.jumbo-text {
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.jumbo-text h1 {
+    font-family: "Monserrat", sans-serif;
+    /*"Cinzel", sans-serif*/
+    color: #d5d5d5;
+    letter-spacing: 4px;
+}
+
+.jumbo-text p {
+    display: inline;
+    font-family: "Lora", sans-serif;
+    color: #d5d5d5;
+    font-size: 2em;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
     .jumbotron {
         padding: 0rem 0rem;
     }
@@ -264,39 +278,45 @@ button:focus {
     .jumbo-text h1 {
         text-align: center;
     }
+    .jumbo-text p {
+        margin-top: 20px;
+        float: center;
+        text-align: center;
+    }
     .jumbo-pic-container {
         justify-content: center;
         background-color: #fff;
     }
 }
 
-@media (min-width: 992px){
-    .jumbotron {
-        
-    }
+@media (min-width: 992px) {
+    .jumbotron {}
     .jumbo-text {
-        padding: 4em 2em;
-        margin-left: 0px;
+        margin: 20px 0px 20px 0px;
+        float: right;
+        text-align: right;
+        padding: 48px 16px 48px 16px;
+        
     }
     .jumbo-text h1 {
         text-align: left;
     }
-    p {
-        
+    .jumbo-text p {
+        margin-top: 20px;
+        float: left;
+        text-align-last: right;
     }
     .jumbo-pic-container {
         justify-content: flex-end;
         align-items: flex-end;
     }
-    #jumbo-pic{
+    #jumbo-pic {
         width: 75%;
-        max-height:350px;
+        max-height: 350px;
     }
 }
-@media (min-width: 1105px){
-    .jumbo-pic-container {
-    }
-}
+
+@media (min-width: 1105px) {}
 
 footer {
     position: absolute;
