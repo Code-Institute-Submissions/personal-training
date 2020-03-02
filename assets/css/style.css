@@ -35,7 +35,7 @@
     
 }
 
-#logo {
+.logo-container {
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
@@ -95,7 +95,6 @@
 
 button:focus {
     outline: none;
-    filter: invert(75%);
 }
 
 .navbar-toggler:active {
@@ -164,13 +163,21 @@ button:focus {
 
 @media screen and (min-width: 576px) {
     
-    #logo {
+    .logo-container {
         width: 100%;
+        justify-content: center;
+    }
+    .logo-container #logo {
+        height:100%;
+        width:100%;
     }
     .navbar-brand {
-        position: relative;
+        height: 120px;
+        max-width: 120px;
+        justify-content: center;
+        /*position: relative;
         margin-left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%);*/
     }
     .navbar-nav {
         background-color: inherit;
@@ -195,17 +202,15 @@ button:focus {
         display: inline-flex;
         justify-content: space-evenly;
     }
-    img {
+    .logo-container #logo {
         height:90%;
     }
-    #logo {
+    .logo-container {
         width: 33%;
         height: 100px;
+        justify-content: flex-start;
     }
-    .navbar-brand {
-        margin-left: 0;
-        transform: translateX(0%);
-    }
+
     #navbar-menu {
         width: 67%;
         height: 100px;
@@ -232,17 +237,15 @@ button:focus {
 /*------------------- Hero Home section */
     .jumbotron {
         background-color: #24222d;
+        /*max-height: 50vh;*/
     }
     h1 {
         font-family: "Monserrat", sans-serif; /*"Cinzel", sans-serif*/
         color: #d5d5d5;
         letter-spacing: 4px;
-        font-size: 1.2em;
-        font-weight: 200;
     }
-    p{
-        display: flex;
-        justify-content: right;
+    .jumbo-text p {
+        display: inline;
         font-family: "Lora" , sans-serif;
         color:#d5d5d5;
         font-size: 2em;
@@ -250,6 +253,50 @@ button:focus {
     span {
         font-weight:bold;
     }
+@media (min-width: 768px){
+    .jumbotron {
+        padding: 0rem 0rem;
+    }
+    .jumbo-text {
+        padding: 20px;
+        margin-left: 20px;
+    }
+    .jumbo-text h1 {
+        text-align: center;
+    }
+    .jumbo-pic-container {
+        justify-content: center;
+        background-color: #fff;
+    }
+}
+
+@media (min-width: 992px){
+    .jumbotron {
+        
+    }
+    .jumbo-text {
+        padding: 4em 2em;
+        margin-left: 0px;
+    }
+    .jumbo-text h1 {
+        text-align: left;
+    }
+    p {
+        
+    }
+    .jumbo-pic-container {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    #jumbo-pic{
+        width: 75%;
+        max-height:350px;
+    }
+}
+@media (min-width: 1105px){
+    .jumbo-pic-container {
+    }
+}
 
 footer {
     position: absolute;
