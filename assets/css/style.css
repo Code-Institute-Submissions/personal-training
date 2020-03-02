@@ -195,8 +195,12 @@ button:focus {
         display: inline-flex;
         justify-content: space-evenly;
     }
+    img {
+        height:90%;
+    }
     #logo {
         width: 33%;
+        height: 100px;
     }
     .navbar-brand {
         margin-left: 0;
@@ -204,7 +208,7 @@ button:focus {
     }
     #navbar-menu {
         width: 67%;
-        height: 200px;
+        height: 100px;
         align-items: flex-end;
     }
     .navbar-nav {
@@ -213,7 +217,7 @@ button:focus {
     }
 }
 
-/*------------------- Section */
+/*------------------- Carousel section */
 .image-slider {
     height:50%;
     width:66%;
@@ -222,6 +226,30 @@ button:focus {
 }
 .carousel-item{
 }
+
+/*------------------- Carousel section - End */
+
+/*------------------- Hero Home section */
+    .jumbotron {
+        background-color: #24222d;
+    }
+    h1 {
+        font-family: "Monserrat", sans-serif; /*"Cinzel", sans-serif*/
+        color: #d5d5d5;
+        letter-spacing: 4px;
+        font-size: 1.2em;
+        font-weight: 200;
+    }
+    p{
+        display: flex;
+        justify-content: right;
+        font-family: "Lora" , sans-serif;
+        color:#d5d5d5;
+        font-size: 2em;
+    }
+    span {
+        font-weight:bold;
+    }
 
 footer {
     position: absolute;
