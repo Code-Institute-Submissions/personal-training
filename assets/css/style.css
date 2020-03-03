@@ -322,22 +322,49 @@ span {
 /*------------------- Callout section */
     .callout{
         position:relative;
-        height:100%;
-    }
-    /*.callout-pic-container{
-        justify-content: center;
-    }*/
-    .callout-pic-container {
-        background-attachment: fixed;
-        background: blue url(assets/images/pt_backgirl.jpeg") no-repeat fixed , center;
+        min-height:300px;
+        background-color: #24222d;
     }
 
-    #callout-pic{
-        height:100%;
-        width:100%;
+    .callout-container {
+        background-image: url("../images/pt_backgirl.jpeg");
+        background-repeat: 0;
+        background-position: center;
+        background-size: cover;
     }
-
-
+    .callout-text {
+        color: #d5d5d5;
+        margin: 20px 0px 20px 0px;
+        float: right;
+        text-align: right;
+        padding: 48px 16px 48px 16px;
+    }
+    .callout h2 {
+        font-family: "Monserrat", sans-serif;
+        letter-spacing: 4px;
+    } 
+    .callout p {
+        display: inline;
+        font-family: "Lora", sans-serif;  
+        font-size: 2em;
+        margin-top: 10px;
+        float: right;
+        text-align: right;
+    }
+    .callout-container h2{
+        color: #24222d;
+        margin: 20px 0px 20px 0px;
+        float: right;
+        text-align: right;
+        padding: 48px 16px 48px 16px;
+    }
+    .badge {
+        font-size: 2rem;
+    }
+    .badge-secondary {
+        color: #d5d5d5;
+        background-color: #24222d;
+    }
 footer {
     position: absolute;
     font-family: "Monserrat", serif;
