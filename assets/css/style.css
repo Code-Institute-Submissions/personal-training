@@ -270,6 +270,7 @@ span {
 @media (min-width: 768px) {
     .jumbotron {
         padding: 0rem 0rem;
+        margin: 10px 20px 10px 20px;
     }
     .jumbo-text {
         padding: 20px;
@@ -320,6 +321,11 @@ span {
         min-height:300px;
         background-color: #24222d;
     }
+@media (min-width: 768px) {
+    .callout{
+        margin: 10px 20px 10px 20px;
+    }
+}           
 
     .callout-container {
         background-image: url("../images/pt_backgirl.jpeg");
@@ -375,7 +381,7 @@ footer {
     display: flex;
     justify-content:space-around;
     margin: auto;
-    padding: 0 60px 0 60px;
+    padding: 5px 60px 5px 60px;
 }
 .social a {
     color: #353436;
