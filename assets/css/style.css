@@ -19,7 +19,7 @@
 }
 
 .bg-color-body {
-    background-color: #6d6e71;
+    background-color: #435484;
 }
 
     {
@@ -244,7 +244,6 @@ button:focus {
 
 .jumbo-text {
     padding: 30px;
-    margin-right: 20px;
 }
 
 .jumbo-text h1 {
@@ -274,15 +273,12 @@ span {
     }
     .jumbo-text {
         padding: 20px;
-        margin-left: 20px;
     }
     .jumbo-text h1 {
-        text-align: center;
+        /*text-align: center;*/
     }
     .jumbo-text p {
         margin-top: 20px;
-        float: center;
-        text-align: center;
     }
     .jumbo-pic-container {
         justify-content: center;
@@ -291,7 +287,6 @@ span {
 }
 
 @media (min-width: 992px) {
-    .jumbotron {}
     .jumbo-text {
         margin: 20px 0px 20px 0px;
         float: right;
@@ -304,8 +299,8 @@ span {
     }
     .jumbo-text p {
         margin-top: 20px;
-        float: left;
-        text-align-last: right;
+        /*float: right;
+        text-align-last: right;*/
     }
     .jumbo-pic-container {
         justify-content: flex-end;
@@ -348,8 +343,8 @@ span {
         font-family: "Lora", sans-serif;  
         font-size: 2em;
         margin-top: 10px;
-        float: right;
-        text-align: right;
+        float: left;
+        text-align: left;
     }
     .callout-container h2{
         color: #24222d;
@@ -365,6 +360,10 @@ span {
         color: #d5d5d5;
         background-color: #24222d;
     }
+
+/*------------------- Callout section - End*/ 
+
+/*------------------- Footer section */
 footer {
     position: absolute;
     font-family: "Monserrat", serif;
@@ -372,5 +371,17 @@ footer {
     font-size: 2em;
     margin-bottom: 0em;
 }
+.social{    
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+    padding: 0 60px 0 60px;
+}
+.social a {
+    color: #353436;
+}
+.social a:hover {
+    color: #d5d5d5;
+}
 
-/*------------------- Section */
+/*------------------- Footer Section - End */
