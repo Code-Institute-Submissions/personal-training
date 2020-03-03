@@ -234,10 +234,11 @@ button:focus {
 
 /*------------------- Carousel section - End */
 
-/*------------------- Hero Home section */
+/*------------------- Tagline section */
 
 .jumbotron {
     background-color: #24222d;
+    margin-bottom: 0rem;
     /*max-height: 50vh;*/
 }
 
@@ -316,7 +317,26 @@ span {
     }
 }
 
-@media (min-width: 1105px) {}
+/*------------------- Tagline section - End */
+
+/*------------------- Callout section */
+    .callout{
+        position:relative;
+        height:100%;
+    }
+    /*.callout-pic-container{
+        justify-content: center;
+    }*/
+    .callout-pic-container {
+        background-attachment: fixed;
+        background: blue url(assets/images/pt_backgirl.jpeg") no-repeat fixed , center;
+    }
+
+    #callout-pic{
+        height:100%;
+        width:100%;
+    }
+
 
 footer {
     position: absolute;
