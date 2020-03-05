@@ -270,9 +270,12 @@ span {
     .jumbotron {
         padding: 0rem 0rem;
         margin: 30px;
+        background-color: #b5c5e8;
     }
     .jumbo-text {
         padding: 20px;
+        border-radius: 25px;
+        background-color: #24222d;
     }
     .jumbo-text p {
         margin-top: 20px;
@@ -281,6 +284,7 @@ span {
         justify-content: flex-end;
         align-items: flex-end;
         background-color: #fff;
+        border-radius: 25px;
     }
     #jumbo-pic {
         width: 300px;
@@ -288,8 +292,12 @@ span {
 }
 
 @media (min-width: 992px) {
+    .col-lg-8 {
+        flex: 0 0 65%;  /* reduced to allow for 10px margin */
+        max-width: 66.666667%;
+    }
     .jumbo-text {
-        margin: 20px 0px 20px 0px;
+        margin: 0px;
         float: right;
         text-align: right;
         padding: 48px 16px 48px 16px;
@@ -306,6 +314,7 @@ span {
     .jumbo-pic-container {
         justify-content: flex-end;
         align-items: flex-end;
+        margin-left: 1.66667%;
     }
     #jumbo-pic {
         width: 75%;
@@ -321,12 +330,24 @@ span {
         min-height:300px;
         background-color: #24222d;
     }
+  
 @media (min-width: 768px) {
     .callout{
         margin: 30px;
         margin-top: 60px;
+        background-color: #b5c5e8;
     }
-}           
+    .callout-text, .callout-container {
+        border-radius: 25px;
+        background-color: #24222d;
+        
+    }
+} 
+@media (min-width: 992px) {          
+    .callout-text{
+        margin-left: 1.66667%;
+    }  
+}
 
     .callout-container {
         background-image: url("../images/pt_backgirl.jpeg");
@@ -336,7 +357,7 @@ span {
     }
     .callout-text {
         color: #d5d5d5;
-        margin: 20px 0px 20px 0px;
+        margin-left: 1.66667%;
         float: right;
         text-align: right;
         padding: 48px 16px 48px 16px;
@@ -368,6 +389,7 @@ span {
         background-color: #24222d;
     }
 
+    margin-left: 1.66667%;
 /*------------------- Callout section - End*/ 
 
 /*------------------- Footer section */
@@ -419,7 +441,7 @@ footer {
     background-repeat: no-repeat;
     position:relative;
     display: flex;
-    
+    overflow: hidden;
 }
 .dark-overlay {
     background: #24222d;
@@ -446,6 +468,9 @@ footer {
 @media (min-width: 768px) {
     .results-container {
         padding:30px;
+    }
+    .results-background {
+        border-radius: 25px;
     }
     .dark-overlay h1{
         margin-left: 10%;
