@@ -19,32 +19,26 @@
 }
 
 .bg-color-body {
-    background-color: #B5C5E8;
+    background-color: #000080;
 }
-
-    /* background-color: #6d6e71; /*gray*/
-
-/*  #D5D5D5 white */
-
+/*
+background colors:
+        body/background : #000080    (blue)
+        black: #000
+foreground colors:
+        Main foreground text:  #ffffff  (white)
+        foreground subtext:     #C6C0C0     (gray)
+        highlighted items:  #FFFF00     (yellow)
+*/
 /*------------------- Header */
 
-.navbar {
-    width: 100%;
-    display: block;
-}
-
-.logo-container {
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-between;
-}
 
 /*--------------------- Icon Bar Animation */
 
 .collapsed .icon-bar {
     width: 22px;
     height: 2px;
-    background-color: #141214;
+    background-color: #fff;
     display: block;
     transition: all 0.2s;
     margin: 4px;
@@ -53,7 +47,7 @@
 .icon-bar {
     width: 22px;
     height: 2px;
-    background-color: #D5D5D5;
+    background-color: #C6C0C0;
     display: block;
     transition: all 0.2s;
     margin-top: 4px;
@@ -102,8 +96,19 @@ button:focus {
 
 /*--------------------- Icon Bar Animation - End */
 
-/*--------------------- Small Res Styling */
+/*--------------------- Nav Bar */
 
+.navbar {
+    width: 100%;
+    display: block;
+}
+
+.logo-container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+/*--------------------- Small Res Styling*/
 @media screen and (max-width: 575px) {
     .navbar-nav li {
         padding: 12px;
@@ -113,8 +118,8 @@ button:focus {
         padding-left: 5%;
     }
     .nav-link:focus {
-        background-color: #d5d5d5;
-        color: #6d6e71;
+        background-color: rgba(0,0,0,0.3);
+        color: #C6C0C0;
         outline: none;
     }
     .navbar-brand:focus, image:focus {
@@ -124,10 +129,10 @@ button:focus {
     }
 }
 
-/*--------------------- Small Res Styling End */
+/*--------------------- XS Res Styling - End */
 
 .navbar-nav {
-    background-color: #435484;
+    /*background-color: #435484;*/
     margin-bottom: 0rem;
     width: 100%;
 }
@@ -140,7 +145,7 @@ button:focus {
     text-align: center;
     font-family: "Monserrat", sans-serif;
     /*"Cinzel", sans-serif*/
-    color: #353436;
+    color: #C6C0C0;
     letter-spacing: 4px;
     font-size: 1.2em;
     font-weight: 200;
@@ -149,15 +154,19 @@ button:focus {
 }
 
 .navbar-nav li a:hover {
-    color: #d5d5d5;
+    color: #fff;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
 }
 
 .nav-item>.active {
     text-decoration: none;
-    color: #211d25e7;
+    color: #fff;
 }
 
-/*--------------------- Tablet Styling */
+/*--------------------- S+M Res Styling Styling */
 
 @media screen and (min-width: 576px) {
     .logo-container {
@@ -172,9 +181,6 @@ button:focus {
         height: 120px;
         max-width: 120px;
         justify-content: center;
-        /*position: relative;
-        margin-left: 50%;
-        transform: translateX(-50%);*/
     }
     .navbar-nav {
         background-color: inherit;
@@ -187,13 +193,15 @@ button:focus {
         text-align: center;
         display: inline-block;
     }
-    .hvr-icon-grow:hover {
+    /*.hvr-icon-grow:hover {
         color: #d5d5d5 !important;
         font-size: 1.4rem;
         text-decoration: none;
-    }
+    }*/
 }
+/*--------------------- S+M Res Styling Styling - End */
 
+/*--------------------- L Res Styling Styling */
 @media screen and (min-width: 970px) {
     .navbar {
         display: inline-flex;
@@ -217,110 +225,17 @@ button:focus {
         width: 100%;
     }
 }
+/*--------------------- L Res Styling Styling - End */
 
-/*------------------- Tagline section */
-
-/*.tagline*/ .jumbotron {
-    background-color: #b5c5e8;
-    margin-bottom: 0rem;
-}
-
-/*.tagline*/ .jumbo-text {
-    padding: 30px;
-    background-color: #24222d;    
-}
-
-.jumbo-text h1 {
-    font-family: "Monserrat", sans-serif;
-    color: #d5d5d5;
-    letter-spacing: 4px;
-}
-
- .jumbo-text p {
-    display: inline;
-    font-family: "Lora", sans-serif;
-    color: #d5d5d5;
-    font-size: 2em;
-}
-.tagline .jumbo-text p {
-    float: right;
-    text-align: right;
-}
-
-span {
-    font-weight: bold;
-}
-
-@media (min-width: 768px) {
-    .col-md-6 {
-        -ms-flex: 0 0 48.33333%;
-        flex: 1 0 48.33333%;
-        max-width: 50%;
-    }
-    .jumbotron {
-        padding: 0rem 0rem;
-        margin: 30px;
-        
-    }
-    .jumbo-text {
-        padding: 20px;
-        border-radius: 25px;
-        background-color: #24222d;
-    }
-    /*.tagline */.jumbo-text p {
-        margin-top: 20px;
-    }
-    .tagline .jumbo-pic-container {
-        margin-left: 1.66667%;
-        justify-content: flex-end;
-        align-items: flex-end;
-        background-color: #fff;
-        border-radius: 25px;
-    }
-    #jumbo-pic {
-        width: 300px;
-    }
-}
-
-@media (min-width: 992px) {
-    .col-lg-8 {
-        flex: 0 0 65%;  /* reduced to allow for 1.666667% margin */
-        max-width: 66.666667%;
-    }
-    .tagline .jumbo-text {
-        margin: 0px;
-        float: right;
-        text-align: right;
-        padding: 48px 16px 48px 16px;
-        
-    }
-    .tagline .jumbo-text h1 {
-        text-align: left;
-    }
-    .tagline .jumbo-text p {
-        margin-top: 20px;
-        /*float: right;
-        text-align-last: right;*/
-    }
-    .tagline .jumbo-pic-container {
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    #jumbo-pic {
-        width: 75%;
-        max-height: 350px;
-    }
-}
-
-/*------------------- Tagline section - End */
+/*--------------------- Nav - End */
 
 
 /*------------------- Grid text-image-boxes*/
-    .grid-container {
+    .home-grid-container {
         display: grid; 
         grid-template-columns: 50% 50%;
     }
-    .grid-container h1 {
+    .home-grid-container h1 {
         display:flex;
         float: left;
         font-family: "Monserrat", sans-serif;
@@ -347,7 +262,7 @@ span {
         margin-top: 30px;
         text-align: center;
     }
-    .grid-container p {
+    .home-grid-container p {
         float: right;
         text-align: end;
         margin-top: 50px;
@@ -355,7 +270,10 @@ span {
         color: #d5d5d5;
         font-size: 2em;
     }
-    .grid-item{
+    span {
+        font-weight: bold;
+    }
+    .home-grid-item{
         width: 100%;
         height: 300px;
         text-align: center;
@@ -391,21 +309,13 @@ span {
         grid-column: 1 / 3;
         width: 100%;
         position: relative;
-        margin:0;
-        /*padding-left: 0px;
-        padding-right: 0px;*/
-        
+        margin:0;      
         background-image: url('../images/pt_backgirl.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
         overflow: hidden;
-
-    }
-    #home-image2 {
-        width:0%;
-        height:0%;
     }
 
     .text-box-mid {
@@ -437,27 +347,25 @@ span {
 }
 
 @media (min-width: 768px) {
-    .grid-container {
+    .home-grid-container {
         grid-template-columns: 15% 15% 15% 15% 15% 15%;
         justify-content: space-around;
         row-gap: 60px;
-        padding: 20px;
+        padding: 30px;
     }
-    .grid-container h1 {
+    .home-grid-container h1 {
         font-size:6vw;
     }
-    .grid-container p {
+    .home-grid-container p {
         margin-top: 20px;
     }
 
-    .grid-item {
+    .home-grid-item {
         border-radius: 25px;
     }
     .text-box-top {
         grid-column: 1 / 4;
     }
-    .text-box-top p {
-       }
     .image-box-top{
         grid-column: 4 / 7;
     }
@@ -475,16 +383,12 @@ span {
 }
 
 @media (min-width: 992px) {
-    .grid-container {
-        grid-template-columns: 15% 15% 15% 15% 15% 15%;
-    }
-    .grid-container h1 {
+    .home-grid-container h1 {
         font-size: 3.5em;
     }
-    .grid-container p {
+    .home-grid-container p {
         font-size: 2em;
     }
-    .grid-item {}
     .text-box-top {
         grid-column: 1 / 5;
         display: block
@@ -533,10 +437,15 @@ footer {
     padding: 5px 60px 5px 60px;
 }
 .social a {
-    color: #353436;
+    color: #c6c0c0;
 }
 .social a:hover {
-    color: #d5d5d5;
+    color: #fff;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+
 }
 
 /*------------------- Footer Section - End */
@@ -560,7 +469,7 @@ footer {
     margin:0;
     padding-left: 0px;
     padding-right: 0px;
-    height:300px;
+    height:150px;
     background-image: url('../images/pt_renrow.jpeg');
     background-size: cover;
     background-position: center;
@@ -618,3 +527,281 @@ footer {
         margin: 15% 10% 0 0;
     }
 }
+
+/*------------------- Divider */
+
+.h-divide {
+    border:2px solid #ffff00;
+    border-radius: 25px;
+   }
+
+@media (min-width: 576px){
+    .h-divide {
+       /* margin: 30px 15px 0px 15px;*/
+    }
+}
+@media (min-width: 992px){
+    .h-divide {
+       
+    }
+}
+
+/*------------------- Results Grid image-quote */
+
+.results-grid-container {
+    display: grid; 
+    grid-template-columns: 100%;
+
+}
+.results-grid-container h1 {
+    display:flex;
+    float: left;
+    font-family: "Monserrat", sans-serif;
+    color: #ffff00;
+    letter-spacing: 4px;    
+}
+.results-image1 {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    /*margin:0;*/      
+    background-image: url('../images/transform1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+
+.results-image2 {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    /*margin:0;*/      
+    background-image: url('../images/transform2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+.results-image3 {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    /*margin:0;*/      
+    background-image: url('../images/transform3.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+
+.light-overlay {
+    background-color: rgba(0,0,0,0.3);
+
+}
+.results-grid-item p {
+    text-align: center;
+    margin: 40px;
+    font-family: "Lora", sans-serif;
+    color:#ffff00;
+    font-size: 3.5vw;
+}/*
+
+.image-box-top{
+    grid-row: 1 ;
+    grid-column: 5 / 7;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+#home-image1 {
+    width:300px;
+    height:300px;
+}
+.image-box-mid {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    width: 100%;
+    position: relative;
+    margin:0;      
+    background-image: url('../images/pt_backgirl.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+
+.text-box-mid {
+    grid-row: 2;
+    grid-column: 3 / 7;
+    padding:30px;
+}
+.badge {
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: center;
+    max-height: 42px;
+    letter-spacing: 0px;
+}
+.badge-secondary {
+    color: #24222d;
+    background-color: #d5d5d5;
+} 
+@media (min-width: 576px) {
+.nested-feature-text h1{
+    margin-top: 0px;
+    margin-right: 50%;
+    text-align: left;
+}
+.nested-feature-text p {
+    margin-top: 20px;
+    margin-left: 33%;
+}
+}
+
+*/
+@media ( min-width:576px) {
+.results-image1 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    /*margin:0;*/      
+    background-image: url('../images/transform1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+.results-image2 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    /*margin:0;*/      
+    background-image: url('../images/transform2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+.results-image3 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    /*margin:0;*/      
+    background-image: url('../images/transform3.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+.results-grid-item p {
+    font-size: 4.5vw;
+}
+}
+
+@media (min-width: 768px) {
+    .results-grid-container {
+        grid-template-columns: 49% 49%;
+        justify-content: space-between;
+        row-gap: 60px;
+        padding: 30px;
+    }
+    .results-grid-item {
+        border-radius: 25px;
+        height:300px;
+    }
+    .results-grid-item p {
+        margin-top: 20px;
+        font-size:2.3vw;
+    }
+    .results-image1 {
+        position: relative;
+        width: 100%;
+        background-color: #ffff00;     
+        background-image: url('../images/transform1.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .results-image2 {
+        position: relative;
+        width: 100%;
+        background-color: #ffff00;      
+        background-image: url('../images/transform2.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        overflow: hidden;
+    }
+    .results-image3 {
+        position: relative;
+        width: 100%;
+        background-color: #ffff00;     
+        background-image: url('../images/transform3.jpeg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        display: flex;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+.results-grid-container h1 {
+    font-size: 3.5em;
+}
+.results-grid-item {
+    border-radius: 25px;
+    height:375px;
+}
+.results-image1 {
+    position: relative;
+    width: 100%; 
+    background-image: url('../images/transform1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+.results-image2 {
+    position: relative;
+    width: 100%;      
+    background-image: url('../images/transform2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+.results-image3 {
+    position: relative;
+    width: 100%;     
+    background-image: url('../images/transform3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+}
+
+/*@media (min-width: 1090px) {
+.text-box-top p {
+    margin-top: 50px;
+}
+}*/
+/*------------------- Results Grid image-quote - End*/
