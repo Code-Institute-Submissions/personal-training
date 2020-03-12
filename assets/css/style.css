@@ -456,14 +456,6 @@ footer {
     margin: 0em;  
 }
 
-.results-container {
-    padding: 0;
-    margin: 0;
-    width: inherit;
-    height: inherit;
-    display:flex;
-    position:relative;
-}
 .results-background {
     position: relative;
     margin:0;
@@ -478,9 +470,7 @@ footer {
     overflow: hidden;
 }
 .dark-overlay {
-    background: #24222d;
-    padding: 30px;
-    opacity: 0.5;
+    background: rgba(36,34,45,0.5);
     width:100%;
     height:100%;
     display: inline-block;
@@ -488,44 +478,45 @@ footer {
 }
 .dark-overlay h1{
     font-family: "Monserrat", sans-serif;
-    color: #d5d5d5;
+    color: #fff;
     letter-spacing: 4px;
+    margin-left: 5%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    
 }
-.dark-overlay p {
+.dark-overlay h2 {
+    display: flex;
+    margin-left: 5%;
+    text-transform: capitalize;
     font-family: "Lora", sans-serif;
-    color: #d5d5d5;
+    color: #fff;
     font-size: 2em;
-    margin-top: 60px;
-    float: right;
+    height: 50%;
+    width: 100%;
 }
+.dark-overlay h2 {
+    justify-content: flex-start;
+    margin-left: 5%;
+    align-items: center;
+}    
 
 @media (min-width: 768px) {
-    .results-container {
+    .results {
         padding:30px;
     }
     .results-background {
         border-radius: 25px;
     }
-    .dark-overlay h1{
+    .dark-overlay h1, .dark-overlay h2{
         margin-left: 10%;
-        float: left;
     }
-    .dark-overlay p{
-        margin-top:60px;
-        margin-right: 10%;
-    }
+    
 }
 @media (min-width: 992px) {
-    .dark-overlay h1{
-        text-align:center;
-        float: center;
-    }
-}
-
-@media (min-width: 1055px) {
-    .dark-overlay p{
-        margin: 15% 10% 0 0;
-    }
 }
 
 /*------------------- Divider */
@@ -563,11 +554,15 @@ footer {
 blockquote {
     margin: 20px;
 }
+blockquote span {
+    font-family: "Monserrat", sans-serif;
+    color: #c6c0c0;
+    font-size: 4vw;
+}
 .results-image1 {
     width: 100%;
     height: 250px;
-    position: relative;
-    /*margin:0;*/      
+    position: relative;      
     background-image: url('../images/transform1.jpg');
     background-size: contain;
     background-position: center;
@@ -579,8 +574,7 @@ blockquote {
 .results-image2 {
     width: 100%;
     height: 250px;
-    position: relative;
-    /*margin:0;*/      
+    position: relative;     
     background-image: url('../images/transform2.jpg');
     background-size: contain;
     background-position: center;
@@ -670,6 +664,9 @@ blockquote {
         margin-top: 20px;
         font-size:2.3vw;
     }
+    blockquote span {
+        font-size: 2vw;
+    }
     .results-image1 {
         position: relative;
         width: 100%;
@@ -747,11 +744,11 @@ blockquote {
 }
 }
 
-/*@media (min-width: 1090px) {
-.text-box-top p {
-    margin-top: 50px;
+@media (min-width: 1200px) {
+    .results-grid-item q {
+        font-size: 2.1vw;
+    }
 }
-}*/
 /*------------------- Results Grid image-quote - End*/
 
 /*------------------- Accordian */
@@ -838,12 +835,146 @@ blockquote {
 /*------------------- Accordian Icon Bar animation - End */
 
 /*------------------- call-to-action */
-.cta-message{
 
+.call-to-action { 
+    padding:0em;
+    margin: 0em;  
 }
-h2 {
+.cta-background {
+    position: relative;
+    margin:0;
+    padding-left: 0px;
+    padding-right: 0px;
+    height:250px;
+    background-image: url('../images/pt_renrow.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+.yellow-overlay {
+    background-color: rgba(255,255,0,0.5);
+    width:100%;
+    height:100%;
+    display: inline-block;
+    position: absolute;
+}
+.yellow-overlay h2{
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 5px;
+    font-family: "Monserrat", sans-serif;
+    color: #000080;
+    letter-spacing: 4px;
+}
+.yellow-overlay form{
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
 
+.yellow-overlay button {
+    font-family: "Lora", sans-serif;
+    background-color: #141214;
+    opacity: 1;
+    color: #fff;
+    font-size: 5vw;
+    border-radius: 25px;
+    line-height: 66%;
+    padding:30px;
 }
+@media (min-width: 576px) {
+    .yellow-overlay h2{
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .yellow-overlay button {
+        line-height: 40%;
+        margin-top:10px;
+        font-size: 2em;
+    }
+}
+@media (min-width: 768px) {
+    .call-to-action {
+        padding:30px;
+    }
+    .cta-background {
+        border-radius: 25px;
+    }
+    .yellow-overlay h2{
+        margin-left: 10%;
+    }
+    .yellow-overlay button{
+        line-height: 30%;
+    }
+}
+@media (min-width: 992px) {
+    .yellow-overlay h2{
+        
+    }
+}
+
+@media (min-width: 1055px) {
+    .yellow-overlay button{
+       /* margin: 15% 10% 0 0;*/
+    }
+}
+
 
 
 /*------------------- call-to-action - End */
+
+/*------------------- Results - End */
+
+/*------------------- Training */
+
+/*------------------- training-headline */
+.training-headline {
+    padding:0em;
+    margin: 0em; 
+}
+.training-background{
+    position: relative;
+    margin:0;
+    padding-left: 0px;
+    padding-right: 0px;
+    height:150px;
+    background-image: url('../images/pt_renrow.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+@media (min-width: 768px) {
+    .training-headline {
+        padding: 30px;
+    }
+    .training-background {
+        border-radius: 25px;
+    }
+}
+
+/*------------------- training-headline - End */
+
+.training-121 {
+    background-image: linear-gradient(to right, #000080 , #c6c0c0 20%, #c6c0c0 80%, #000080 );
+    /*height:65vh;*/
+    padding: 30px 20%;
+}
+.training-column-text {
+    font-family: "Lora", sans-serif;
+    color: #24222d;
+    font-size: 1.5em;
+}
+.training-cta {
+
+}
+
+
+/*------------------- Training - End */
