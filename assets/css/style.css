@@ -964,17 +964,86 @@ blockquote span {
 
 .training-121 {
     background-image: linear-gradient(to right, #000080 , #c6c0c0 20%, #c6c0c0 80%, #000080 );
-    /*height:65vh;*/
-    padding: 30px 20%;
+    padding-bottom: 50px;
+}
+.training-grid-container {
+    display: grid; 
+    grid-template-columns: 30% 60%;
+    grid-gap: 10%;
+    grid-row-gap:5%;
+    padding: 50px 20%;
+}
+.training-grid-item {
+    width:100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
 }
 .training-column-text {
     font-family: "Lora", sans-serif;
-    color: #24222d;
+    color: #3e5087;
     font-size: 1.5em;
 }
-.training-cta {
 
+.training-grid-item i.fas {
+    font-size: 12em;
+    text-align: center;
+    
+}
+.benefits-image {
+    background-image: url('../images/face2face.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
 }
 
+
+
+/*------------------- Training- price list  */
+.price-list {
+    margin: 10%;
+    padding: 30px;
+    color: #fff;
+    background-color: #24222d;
+    border-radius: 25px;
+}
+.price-list span{
+    color: #ff0200;
+    font-size: 1.6em;
+}
+/*------------------- Training- Price List - End */
+
+/*------------------- training- CTA  */
+.training-cta {
+    background-color: #ffff00;
+    opacity: .8;
+    border-radius: 25px;
+    margin: 0 5%;
+    padding: 20px;
+}
+.training-cta span{
+    color: #111085;
+    font-size: 2em;
+}
+
+input[type=text] #fullname, #email {
+    width: 66%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  #query {
+      width:100%;
+      height:100px;
+  }
+  #submit{
+    margin-left: 45%;
+   }
+/*------------------- training- CTA  */
 
 /*------------------- Training - End */
