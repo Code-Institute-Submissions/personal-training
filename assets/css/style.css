@@ -493,7 +493,7 @@ footer {
     text-transform: capitalize;
     font-family: "Lora", sans-serif;
     color: #fff;
-    font-size: 2em;
+    font-size: 2.7em;
     
 }
 .dark-overlay h2 {
@@ -1016,10 +1016,48 @@ blockquote span {
     color: #fff;
     background-color: #24222d;
     border-radius: 25px;
+    font-family: "Lora", sans-serif;
 }
-.price-list span{
-    color: #ff0200;
+.price-list .btn-secondary{
+    color: #24222d;
+    background-color: #c6c0c0;
     font-size: 1.6em;
+}
+.price-list .btn-secondary:hover {
+    color: #000;
+    background-color: #fff;
+}
+.price-list-item .white-subheader {
+    font-size: 2em;
+}
+.price-list-item ul{
+    padding-left: 0px;
+}
+.price-list-item li {
+    list-style: none;
+    font-size: 1.2em;
+    margin-top: 10px;
+    /*margin-left: -40px;*/
+}
+.price-list-item> li::before {
+    margin-left: 10px;
+}
+.price-button-area {
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#price-btn1{
+    margin-top: 95px;
+}
+#price-btn2 {
+    margin-top: 125px;
+}
+#price-btn3 {
+    margin-top: 40px;
+}
+#price-btn4{
+    margin-top: 75px;
 }
 /*------------------- Training- Price List - End */
 
@@ -1031,12 +1069,22 @@ blockquote span {
     margin: 0 5%;
     padding: 20px;
 }
+.training-cta p {
+    font-size: 2em;
+}
 .training-cta span{
     color: #111085;
     font-size: 2em;
+    white-space: nowrap;
 }
 
-input[type=text] #fullname, #email {
+label {
+    font-family: "Monserrat" , sans-serif;
+    letter-spacing: 1px;
+    color: #414347;
+}
+
+#fullname, #email {
     width: 66%;
     padding: 12px 20px;
     margin: 8px 0;

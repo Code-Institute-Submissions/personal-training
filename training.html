@@ -143,8 +143,8 @@
             <h2 class="white-header mb-4 ml-3">
                 1-2-1 Packages
             </h2>
-            <div class="bronze col-12 col-lg-4">
-                <h3 class="white-subheader">Bronze</h3>
+            <div class="price-list-item col-12 col-lg-4">
+                <h3 class="white-subheader">Bronze</h3> <!-- size 2em-->
                 <ul>
                     <li>
                         Macronutrient goals set monthly
@@ -159,10 +159,12 @@
                         Pogress and Goals evaluated on monthly basis
                     </li>
                 </ul>
-                <span>£200 pm</span>
+                <div class="price-button-area" id="price-btn1">
+                    <a class="btn btn-secondary" href="#" role="button">£200 pm</a>
+                </div>
             </div>
-            <div class="silver col-12 col-lg-4">
-                <h3 class="white-subheader">Silver package</h3>
+            <div class="price-list-item col-12 col-lg-4">
+                <h3 class="white-subheader">Silver</h3> <!-- size 2em-->
                 <ul>
                     <li>
                         goals set monthly
@@ -177,10 +179,12 @@
                         Pogress and Goals evaluated on monthly basis
                     </li>
                 </ul>
-                <span>£380 pm</span>
+                <div class="price-button-area" id="price-btn2">
+                    <a class="btn btn-secondary" href="#" role="button">£380 pm</a>
+                </div>
             </div>
-            <div class="gold col-12 col-lg-4">
-                <h3 class="white-subheader">Gold package</h3>
+            <div class="price-list-item col-12 col-lg-4">
+                <h3 class="white-subheader">Gold</h3> <!-- size 2em-->
                 <ul>
                     <li>
                         Fully comprehensive meal plan included.
@@ -197,7 +201,9 @@
                         Pogress and Goals evaluated on monthly basis
                     </li>
                 </ul>
-                <span>£640 pm</span>
+                <div class="price-button-area" id="price-btn3">
+                    <a class="btn btn-secondary" href="#" role="button">£640 pm</a>
+                </div>
             </div>
         </div>
 
@@ -286,7 +292,7 @@
             <h2 class="white-header mb-4 ml-3">
                 Online Packages
             </h2>
-            <div class="bronze col-12 col-lg-6">
+            <div class="price-list-item col-12 col-lg-6">
                 <h3 class="white-subheader">Right Track</h3>
                 <ul>
                     <li>
@@ -299,9 +305,11 @@
                         Pogress and Goals evaluated on monthly basis
                     </li>
                 </ul>
-                <span>£200 pm</span>
+                <div class="price-button-area" id="price-btn4" >
+                <a class="btn btn-secondary" href="#" role="button">£100 pm</a>
+                </div>
             </div>
-            <div class="silver col-12 col-lg-6">
+            <div class="price-list-item col-12 col-lg-6">
                 <h3 class="white-subheader">Hands on</h3>
                 <ul>
                     <li>
@@ -317,23 +325,26 @@
                         Pogress and Goals evaluated on monthly basis
                     </li>
                 </ul>
-                <span>£380 pm</span>
+                <div class="price-button-area" id="price-btn5">
+                    <a class="btn btn-secondary" href="#" role="button">£165 pm</a>
+                </div>
             </div>
         </div>
 
         <div class="training-cta">
             <p class="large-white">
                 Got any further questions?
-
-                Speak with someone today on <span>01234 567 891</span>
-
+                <br>
+                Speak with someone today on <br>
+                <span>01234 567 891</span>
+                <br>
                 Or simply send us your query below:
             </p>
             <form>
-                <label for="fullname">Full Name</label><br>
-                <input type="text" name="fullname" id="fullname" value="John Smith" required><br>
-                <label for="email">Email Address</label><br>
-                <input type="text" name="email" id="email" value="example@domain.com" required><br>
+                <label for="fullname">Full Name*</label><br>
+                <input type="text" name="fullname" id="fullname" placeholder="John Smith" required><br>
+                <label for="email">Email Address*</label><br>
+                <input type="text" name="email" id="email" required placeholder="example@domain.com"><br>
                 <label for="query">Query</label><br>
                 <textarea name="query" id="query" required></textarea></label><br /><br />
                 <input name="submit" type="submit" id="submit" value="Submit Query">
