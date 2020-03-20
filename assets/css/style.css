@@ -1027,6 +1027,17 @@ blockquote span {
     color: #000;
     background-color: #fff;
 }
+.price-list .h-divide {
+    border: 1px solid #ffffff;
+    /*border-radius: 25px;*/
+    width: 67%;
+    margin-left: 17%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.price-list-item{
+    display
+}
 .price-list-item .white-subheader {
     font-size: 2em;
 }
@@ -1047,17 +1058,26 @@ blockquote span {
     justify-content: center;
     align-items: flex-end;
 }
-#price-btn1{
-    margin-top: 95px;
+.btn-secondary{
+    margin-top: 20px;
 }
-#price-btn2 {
-    margin-top: 125px;
-}
-#price-btn3 {
-    margin-top: 40px;
-}
-#price-btn4{
-    margin-top: 75px;
+
+@media (min-width: 992px) {
+    .price-list-item{
+        height: 350px;
+    }
+    #price-121 .price-list-item li {
+        font-size: 1.75vw;
+    }
+    #price-121 .price-button-area {
+        margin-top: 30px;
+    }
+    #price-online .price-list-item {
+        height: 246px;
+    }
+    #price-online .price-list-item  li {
+        font-size: 1.6vw;
+    }
 }
 /*------------------- Training- Price List - End */
 
