@@ -5,7 +5,7 @@
 /*------------------- colours */
 
 .bg-color-nav {
-    background-color: #435484;
+    background-color: #000080;
 }
 
 .bg-color-section {
@@ -19,7 +19,7 @@
 }
 
 .bg-color-body {
-    background-color: #000080;
+    background-color: #c6c0c0;
 }
 /*
 background colors:
@@ -457,7 +457,7 @@ footer {
     margin: 0em;  
 }
 
-.results-background {
+.headline-background {
     position: relative;
     margin:0;
     padding-left: 0px;
@@ -483,14 +483,14 @@ footer {
     display: flex;
     align-items: center;
 }
-.white-header{ /*.dark-overlay h1*/
+.header{ /*.dark-overlay h1*/
     width: 100%;
     font-family: "Monserrat", sans-serif;
     color: #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
- .white-subheader{ /*.dark-overlay h2*/
+ .subheader{ /*.dark-overlay h2*/
     text-transform: capitalize;
     font-family: "Lora", sans-serif;
     color: #fff;
@@ -507,19 +507,11 @@ footer {
 }    
 
 @media (min-width: 768px) {
-    .results {
-        padding:30px;
-    }
-    .results-background {
-        border-radius: 25px;
-    }
     .dark-overlay h1, .dark-overlay h2{
         margin-left: 10%;
-    }
-    
+    }   
 }
-@media (min-width: 992px) {
-}
+
 
 /*------------------- Divider */
 
@@ -944,26 +936,8 @@ blockquote span {
     height: 90%;
     align-items: flex-end;
 }
-.training-background{
-    position: relative;
-    margin:0;
-    padding-left: 0px;
-    padding-right: 0px;
-    height:150px;
+.training-headline .headline-background {
     background-image: url('../images/pt_renrow.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
-}
-@media (min-width: 768px) {
-    .training-headline {
-        /*padding: 30px;*/
-    }
-    .training-background {
-        /*border-radius: 25px;*/
-    }
 }
 
 /*------------------- training-headline - End */
@@ -1102,7 +1076,7 @@ img{
     margin-bottom: 20px;
 }
 
-.price-list-item .white-subheader {
+.price-list-item .subheader {
     font-size: 2em;
 }
 .price-list-item ul{
@@ -1187,6 +1161,7 @@ label {
    .btn-primary {
     color: #fff;
     background-color: #000080;
+    font-family: "Lora" , sans-serif;
     font-size: 1.4em;
     }
 
@@ -1209,3 +1184,87 @@ label {
 /*------------------- training- CTA  */
 
 /*------------------- Training - End */
+
+/*------------------- Contact */
+
+/*------------------- Contact info */
+
+.contact-details {
+    background-color: #ffff00;
+    color: #000;
+    opacity: .8;
+    padding: 4%;
+}
+.contact-title {
+    font-family: "Monserrat" , sans-serif;
+    color: #000;
+    padding-top: 4%;
+    width: 66%;
+    font-size: 2.0em;
+}
+.info { 
+    font-family: "Lora", sans-serif;
+    font-size: 1.2em;
+}
+    
+iframe {
+   height: 200px;
+   width: 100%;
+   background-color: #C6C0C0;
+}
+.details-content {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details span {
+    color: #000080;
+    font-size: 1.2em;
+}
+
+.info ul {
+    list-style: none;
+    margin-left: -40px;
+}
+.contact-info li {
+    margin-top: 4%;
+}
+.contact-area form {
+    background-color: #1f1d1d;
+    color: #fff;
+    padding: 20px;
+}
+.contact-area form label {
+    color: #fff;
+}
+.contact-area .btn-primary {
+    color: #1f1d1d;
+    background-color: #fff;
+    border-color: #ffffff;
+}
+/*------------------- Contact info - End*/
+
+/*------------------- instagram */
+.instagram-hero-image {
+    height: 300px;
+    background-image: url('../images/running_man.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+    align-items: start;
+}
+.instagram-hero-image h2 {
+    font-family: "Monserrat", sans-serif;
+    height: 20%;  
+    color: #000;
+    text-align: end;
+    margin-top: 4%;
+    margin-right: 4%;
+}
+
+
+/*------------------- instagram - End */
+
+/*------------------- Contact- End */
