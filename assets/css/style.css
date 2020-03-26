@@ -9,18 +9,19 @@
 }
 
 .bg-color-section {
-    background-color: #141214;
+    background-color: #ffff00;
     /**/
 }
 
 .bg-color-footer {
-    background-color: #555e7c;
+    background-color: #000080;
     /**/
 }
 
 .bg-color-body {
     background-color: #c6c0c0;
 }
+
 /*
 background colors:
         body/background : #000080    (blue)
@@ -1151,20 +1152,27 @@ label {
     margin: 8px 0;
     box-sizing: border-box;
   }
-  #query {
-      width:100%;
-      height:100px;
-  }
-  #submit{
+#query {
+    width:100%;
+    height:100px;
+}
+#submit{
     margin-left: 35%;
-   }
-   .btn-primary {
+}
+.btn-primary {
     color: #fff;
     background-color: #000080;
     font-family: "Lora" , sans-serif;
-    font-size: 1.4em;
+    font-size: 1.4em;       
+   }
+@media (min-width: 768px) {
+    #fullname, #email {
+        width: 66%;
     }
-
+    #submit{
+        margin-left: 45%;
+    }
+}
 @media (min-width: 992px) {
     .training-cta {
         margin: 0 5%;  
@@ -1174,7 +1182,6 @@ label {
         white-space: nowrap;
     }
     #fullname, #email {
-        width: 66%;
         padding: 12px 20px;   
     }
     #submit {
@@ -1185,12 +1192,12 @@ label {
 
 /*------------------- Training - End */
 
+
 /*------------------- Contact */
 
 /*------------------- Contact info */
 
 .contact-details {
-    background-color: #ffff00;
     color: #000;
     opacity: .8;
     padding: 4%;
@@ -1198,17 +1205,19 @@ label {
 .contact-title {
     font-family: "Monserrat" , sans-serif;
     color: #000;
-    padding-top: 4%;
+    padding-top: 5%;
     width: 66%;
     font-size: 2.0em;
 }
 .info { 
     font-family: "Lora", sans-serif;
     font-size: 1.2em;
+    padding-bottom: 5%;
 }
-    
+
 iframe {
-   height: 200px;
+   position: relative ;
+   height: 250px;
    width: 100%;
    background-color: #C6C0C0;
 }
@@ -1216,54 +1225,162 @@ iframe {
     display: flex;
     justify-content: center;
 }
-
+.info:not(span) {
+    font-size: 1.3em;
+}
 .contact-details span {
     color: #000080;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .info ul {
     list-style: none;
     margin-left: -40px;
 }
-.contact-info li {
-    margin-top: 4%;
+.contact-details li {
+    margin-top: 2%;
 }
 .contact-area form {
-    background-color: #1f1d1d;
-    color: #fff;
-    padding: 20px;
+    padding: 20px 0px 0px 0px;
+    background-color: inherit;
 }
 .contact-area form label {
-    color: #fff;
+        color: #000;
 }
 .contact-area .btn-primary {
     color: #1f1d1d;
     background-color: #fff;
     border-color: #ffffff;
 }
+
+@media (min-width:768px) {
+    .contact-area {
+        background-image: linear-gradient(to right, #000080 , #c6c0c0 10%, #c6c0c0 90%, #000080 );
+        padding-bottom: 50px;
+    }
+    
+    .contact-title {
+        padding-top: 0%;
+    }  
+    .info {
+        padding-bottom: 0%;
+    } 
+    .contact-details {
+        padding: 4% 20px;
+    }   
+    #address {
+        margin: 0 10%;
+    }
+    
+    #map {
+        margin: 0 10%;
+    } 
+    iframe {
+        height: 350px; 
+     }
+     .info:not(span) {
+        font-size: 1.4em;
+    }
+    .contact-details span {
+        font-size: 1.5em;
+    }
+     .contact-area form {
+        margin: 0;
+     }
+}
+@media (min-width:992px) {
+    .contact-area {
+        padding-top: 2%;
+        padding-bottom: 50px;
+    }
+    .contact-area>div{
+        margin-top: 2%;
+    }
+    .contact-area>div:not(.contact-where){
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .contact-details {
+        border-radius: 25px;
+    }
+    .contact-title {
+        width: 100%;
+        font-size: 2.5em;
+    }
+    .info:not(span) {
+        font-size: 1.5em;
+    }
+    .contact-where {
+        width: 100%;
+        margin: 0 10%;
+        display: inline-flex;
+    }
+    #address{
+        width: 28%;
+        margin: 0;
+        padding: 0 0 0 20px;
+    }
+    
+    #map {
+        width: 50%;
+        margin-left: 2%;
+    }
+    iframe {
+        height: 450px;
+        border-radius: 25px;
+    }
+    .contact-area form {
+        padding: 20px 0px 0px 0px;
+        margin: 0;
+        background-color: inherit;
+    }
+    .contact-details span {
+        font-size: 1.8em;
+    }
+    .contact-area form label {
+        font-size: 1.2em;
+    }
+    #query {
+        height: 200px;
+    }
+}
 /*------------------- Contact info - End*/
 
 /*------------------- instagram */
-.instagram-hero-image {
-    height: 300px;
-    background-image: url('../images/running_man.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
-    align-items: start;
+
+.instagram-hero img{
+    width: 100%;
+    height: auto;
 }
-.instagram-hero-image h2 {
-    font-family: "Monserrat", sans-serif;
-    height: 20%;  
-    color: #000;
-    text-align: end;
-    margin-top: 4%;
-    margin-right: 4%;
+.instagram-hero {
+    position: relative;
+}
+.instagram a {
+    width: 100%;
 }
 
+.text-overlay {
+    position: absolute;
+    top: 0;
+    text-align: right;
+    width: 100%; 
+}
+.instagram-hero h2 {
+    font-family: "Monserrat", sans-serif;
+    color: #000;
+    padding-right: 4%;
+    padding-top: 4%;
+    
+}
+.instagram a:hover {
+    color: #000;
+    list-style: none;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+}
 
 /*------------------- instagram - End */
 
