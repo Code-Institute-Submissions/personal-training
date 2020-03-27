@@ -555,8 +555,8 @@ blockquote span {
     font-size: 4vw;
 }
 .results-image1 {
-    width: 100%;
-    height: 250px;
+    /*width: 100%;*/
+    height: 100%;
     position: relative;      
     background-image: url('../images/transform1.jpg');
     background-size: contain;
@@ -567,10 +567,10 @@ blockquote span {
 }
 
 .results-image2 {
-    width: 100%;
-    height: 250px;
+    /*width: 100%;*/
+    height: 100%;
     position: relative;     
-    background-image: url('../images/transform2.jpg');
+    background-image: url('../images/rsz_transform2.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -578,10 +578,9 @@ blockquote span {
     overflow: hidden;
 }
 .results-image3 {
-    width: 100%;
-    height: 250px;
-    position: relative;
-    /*margin:0;*/      
+    /*width: 100%;*/
+    height: 100%;
+    position: relative;    
     background-image: url('../images/transform3.jpeg');
     background-size: contain;
     background-position: center;
@@ -604,44 +603,18 @@ blockquote span {
 
 
 @media ( min-width:576px) {
-.results-image1 {
-    width: 100%;
-    height: 450px;
-    position: relative;    
-    background-image: url('../images/transform1.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
-}
-.results-image2 {
-    width: 100%;
-    height: 450px;
-    position: relative;
-    /*margin:0;*/      
-    background-image: url('../images/transform2.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
-}
-.results-image3 {
-    width: 100%;
-    height: 450px;
-    position: relative;    
-    background-image: url('../images/transform3.jpeg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    display: flex;
-    overflow: hidden;
-}
-.results-grid-item q {
-    font-size: 4.5vw;
-}
+    .results-image1 {
+        height: 450px;
+        }
+    .results-image2 {   
+        height: 450px;
+    }
+    .results-image3 {        
+        height: 450px;
+    }
+    .results-grid-item q {
+        font-size: 4.5vw;
+    }
 }
 
 @media (min-width: 768px) {
@@ -653,7 +626,7 @@ blockquote span {
     }
     .results-grid-item {
         border-radius: 25px;
-        height:300px;
+        /*height:300px;*/
     }
     .results-grid-item q {
         margin-top: 20px;
@@ -663,80 +636,34 @@ blockquote span {
         font-size: 2vw;
     }
     .results-image1 {
-        position: relative;
-        width: 100%;
-        background-color: #ffff00;     
-        background-image: url('../images/transform1.jpg');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        overflow: hidden;
+        background-color: rgba(0,0,0,0.3);   
     }
     
     .results-image2 {
-        position: relative;
-        width: 100%;
-        background-color: #ffff00;      
-        background-image: url('../images/transform2.jpg');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        overflow: hidden;
+        background-color: rgba(0,0,0,0.3);     
     }
     .results-image3 {
-        position: relative;
-        width: 100%;
-        background-color: #ffff00;     
-        background-image: url('../images/transform3.jpeg');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 20px;
-        display: flex;
-        overflow: hidden;
+        background-color: rgba(0,0,0,0.3);    
     }
 }
 
 @media (min-width: 992px) {
-.results-grid-container h1 {
-    font-size: 3.5em;
-}
-.results-grid-item {
-    border-radius: 25px;
-    height:375px;
-}
-.results-image1 {
-    position: relative;
-    width: 100%; 
-    background-image: url('../images/transform1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
-}
-.results-image2 {
-    position: relative;
-    width: 100%;      
-    background-image: url('../images/transform2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
-}
-.results-image3 {
-    position: relative;
-    width: 100%;     
-    background-image: url('../images/transform3.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
-}
+    .results-grid-container h1 {
+        font-size: 3.5em;
+    }
+    .results-grid-item {
+        border-radius: 25px;
+        height:375px;
+    }
+    .results-image1 {
+        background-size: cover;
+    }
+    .results-image2 {
+        background-size: cover;
+    }
+    .results-image3 {
+        background-size: cover;
+    }
 }
 
 @media (min-width: 1200px) {
