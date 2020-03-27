@@ -555,10 +555,10 @@ blockquote span {
     font-size: 4vw;
 }
 .results-image1 {
-    /*width: 100%;*/
-    height: 100%;
+    width: 100%;
+    height: 300px;
     position: relative;      
-    background-image: url('../images/transform1.jpg');
+    background-image: url('../images/transform1_lg_crop.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -567,10 +567,10 @@ blockquote span {
 }
 
 .results-image2 {
-    /*width: 100%;*/
-    height: 100%;
+    width: 100%;
+    height: 300px;
     position: relative;     
-    background-image: url('../images/rsz_transform2.jpg');
+    background-image: url('../images/transform2_lg_crop.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -578,10 +578,10 @@ blockquote span {
     overflow: hidden;
 }
 .results-image3 {
-    /*width: 100%;*/
-    height: 100%;
+    width: 100%;
+    height: 300px;
     position: relative;    
-    background-image: url('../images/transform3.jpeg');
+    background-image: url('../images/transform3_lg_crop.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -604,13 +604,13 @@ blockquote span {
 
 @media ( min-width:576px) {
     .results-image1 {
-        height: 450px;
-        }
+        height: 381px;
+    }
     .results-image2 {   
-        height: 450px;
+        height: 381px;
     }
     .results-image3 {        
-        height: 450px;
+        height: 381px;
     }
     .results-grid-item q {
         font-size: 4.5vw;
@@ -626,7 +626,7 @@ blockquote span {
     }
     .results-grid-item {
         border-radius: 25px;
-        /*height:300px;*/
+        height:300px;
     }
     .results-grid-item q {
         margin-top: 20px;
@@ -654,15 +654,6 @@ blockquote span {
     .results-grid-item {
         border-radius: 25px;
         height:375px;
-    }
-    .results-image1 {
-        background-size: cover;
-    }
-    .results-image2 {
-        background-size: cover;
-    }
-    .results-image3 {
-        background-size: cover;
     }
 }
 
