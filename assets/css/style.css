@@ -1134,7 +1134,11 @@ img{
 .training-cta p {
     font-size: 2em;
 }
-.training-cta span{
+span.highlight {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.training-cta span.big{
     color: #111085;
     font-size: 2em;
 }
@@ -1146,7 +1150,7 @@ label {
     font-size: 1.2em;
 }
 
-#fullname, #email {
+#fullname, #email, #availability {
     width: 100%;
     padding: 12px 5px;
     margin: 8px 0;
@@ -1155,6 +1159,12 @@ label {
 #query {
     width:100%;
     height:100px;
+}
+#times {
+    font-family: "Lora" , sans-serif;
+    letter-spacing: 1px;
+    color: #f30808;
+    font-size: 1.2em;
 }
 #submit{
     margin-left: 35%;
@@ -1166,7 +1176,7 @@ label {
     font-size: 1.4em;       
    }
 @media (min-width: 768px) {
-    #fullname, #email {
+    #fullname, #email, #availability {
         width: 66%;
     }
     #submit{
@@ -1181,7 +1191,7 @@ label {
     .training-cta span {
         white-space: nowrap;
     }
-    #fullname, #email {
+    #fullname, #email, #availability {
         padding: 12px 20px;   
     }
     #submit {
