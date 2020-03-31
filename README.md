@@ -9,6 +9,17 @@ Contents
 Usage
 This project was merely intended to showcase my skills as a UI designer. My ability to style a web page using CSS
 
+Wireframes
+##Index page:
+<img src="assets/wireframes/index_page.png" alt="markups of index page">
+##Results page:
+<img src="assets/wireframes/results_page.png" alt="markups of results page">
+##Training page:
+<img src="assets/wireframes/training_page.png" alt="markups of training page">
+##Contact page:
+<img src="assets/wireframes/contact.png" alt="markups of contact page">
+
+
 Installation
 
 
