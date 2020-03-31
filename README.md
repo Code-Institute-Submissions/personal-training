@@ -17,7 +17,7 @@ Wireframes
 ##Training page:
 <img src="assets/wireframes/training_page.png" alt="markups of training page">
 ##Contact page:
-<img src="assets/wireframes/contact.png" alt="markups of contact page">
+<img src="assets/wireframes/contact_page.png" alt="markups of contact page">
 
 
 Installation
