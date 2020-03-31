@@ -330,6 +330,24 @@ button:focus {
         color: #24222d;
         background-color: #d5d5d5;
     } 
+    a .badge-secondary.badge:hover {
+        background-color: #fff;
+        text-decoration: none;
+        color: #24222d;
+    }
+    .home-grid-item a h1,.home-grid-item a p {
+        color: #d5d5d5;
+    }
+     
+    .home-grid-item a *:hover{
+        color: #fff;
+        opacity: 1;
+        text-decoration: none;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        transition: color 0.5s;
+    }
 @media (min-width: 576px) {
     .nested-feature-text h1{
         margin-top: 0px;
@@ -813,12 +831,6 @@ blockquote span {
     }
 }
 @media (min-width: 768px) {
-    .call-to-action {
-        padding:30px;
-    }
-    .cta-background {
-        border-radius: 25px;
-    }
     .yellow-overlay h2{
         margin-left: 10%;
     }
@@ -827,8 +839,11 @@ blockquote span {
     }
 }
 @media (min-width: 992px) {
-    .yellow-overlay h2{
-        
+    .call-to-action {
+        padding:30px;
+    }
+    .cta-background {
+        border-radius: 25px;
     }
 }
 
@@ -861,7 +876,7 @@ blockquote span {
 
 /*------------------- training-headline - End */
 
-.training-121 {
+.training {
     /*background-image: linear-gradient(to right, #000080 , #c6c0c0 5%, #c6c0c0 95%, #000080 );*/
     background-color: #C6C0C0;
     
@@ -880,6 +895,7 @@ blockquote span {
     font-family: "Lora", sans-serif;
     margin: 15px 0px;
 }
+
 .text {
     font-size: 1.2em;
 }
@@ -891,8 +907,17 @@ img{
     font-size: 10rem;
     text-align: center;
 }
-.benefits.image {
+
+.one-to-one .benefits.image {
     background-image: url('../images/face2face.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+}
+.online .squat.image {
+    background-image: url('../images/squat_shadow.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -910,7 +935,7 @@ img{
     margin-top: 2%;
 }
 @media (min-width: 768px) {
-    .training-121 {
+    .training {
         background-image: linear-gradient(to right, #000080 , #c6c0c0 10%, #c6c0c0 90%, #000080 );
         padding-bottom: 50px;
     }
@@ -920,29 +945,7 @@ img{
         padding: 30px 10%;
     }
     .training-grid-item {
-        width:100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000;
-        font-family: "Lora", sans-serif;
         font-size: 1.0rem;
-    }
-    .text {
-        font-size: 1.2em;
-    }
-    .training-grid-item i.fas {
-        display:flex;
-        font-size: 10rem;
-        text-align: center;
-    }
-    .benefits.image {
-        background-image: url('../images/face2face.png');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        overflow: hidden;
     }
     
     .tracking.text li {
@@ -955,15 +958,6 @@ img{
         column-gap: 3%;
         padding: 30px 10%;
     }
-    .training-grid-item {
-        width:100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000;
-        font-family: "Lora", sans-serif;
-        font-size: 1.0rem;
-    } 
     .tracking.text li {
         margin-bottom: 5%;
         height: auto;
@@ -1019,6 +1013,9 @@ img{
 .btn-secondary{
     margin-top: 20px;
 }
+.price-list-item .nested-list li {
+    padding-left: 30px;
+}
 @media (min-width:992px) {
     .price-list {
         margin: 0% 5%;
@@ -1038,6 +1035,11 @@ img{
         height: 246px;
     }
     #price-online .price-list-item  li {
+        font-size: 1.75vw;
+    }
+}
+@media (min-width:1330px) {
+    #price-121 .price-list-item li {
         font-size: 1.6vw;
     }
 }
