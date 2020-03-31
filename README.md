@@ -14,11 +14,11 @@ This project was merely intended to showcase my skills as a UI designer. My abil
 
 ### Index page:
 
-    <img src="assets/wireframes/index_page.png" alt="markups of index page">
+<img src="assets/wireframes/index_page.png" alt="markups of index page">
 
 ### Results page:
 
-    <img src="assets/wireframes/results_page.png" alt="markups of results page">
+<img src="assets/wireframes/results_page.png" alt="markups of results page">
 
 ### Training page:
 
@@ -28,7 +28,7 @@ This project was merely intended to showcase my skills as a UI designer. My abil
 
 <img src="assets/wireframes/contact_page.png" alt="markups of contact page">
 
-
+git
 ## Installation
 
 
