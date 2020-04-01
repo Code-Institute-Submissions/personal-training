@@ -1,40 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora|Montserrat:200&display=swap');
-/* add carousel with upto 5 images */
 
-/*------------------- colours */
+
+/*---------------------------------------------- Colours */
 
 .bg-color-nav {
-    background-color: #000080;
+    background-color: #000;
 }
-
+.bg-color-body {
+    background-color:#c6c0c0;
+}
 .bg-color-section {
-    background-color: #ffff00;
+    background-color: #24222d;
     /**/
+}
+.bg-color-feature {
+    background-color: #fff;
 }
 
 .bg-color-footer {
-    background-color: #000080;
+    background-color:  #000;
     /**/
 }
 
-.bg-color-body {
-    background-color: #c6c0c0;
-}
 
-/*
-background colors:
-        body/background : #000080    (blue)
-        black: #000
-foreground colors:
-        Main foreground text:  #ffffff  (white)
-        foreground subtext:     #C6C0C0     (gray)
-        highlighted items:  #FFFF00     (yellow)
-*/
-/*------------------- Header */
+      
+/*---------------------------------------------- Header */
 
 
-/*--------------------- Nav Icon Bar Animation */
+/*---------------------------------------------- Nav Icon Bar Animation */
 
 .collapsed .icon-bar {
     width: 22px;
@@ -95,9 +89,9 @@ button:focus {
     color: #3e5087;
 }
 
-/*--------------------- Icon Bar Animation - End */
+/*---------------------------------------------- Icon Bar Animation - End */
 
-/*--------------------- Nav Bar */
+/*---------------------------------------------- Nav Bar */
 
 .navbar {
     width: 100%;
@@ -109,7 +103,7 @@ button:focus {
     width: 100%;
     justify-content: space-between;
 }
-/*--------------------- Small Res Styling*/
+/*---------------------------------------------- Small Res Styling*/
 @media screen and (max-width: 575px) {
     .navbar-nav li {
         padding: 12px;
@@ -130,7 +124,7 @@ button:focus {
     }
 }
 
-/*--------------------- XS Res Styling - End */
+/*---------------------------------------------- XS Res Styling - End */
 
 .navbar-nav {
     /*background-color: #435484;*/
@@ -140,6 +134,10 @@ button:focus {
 
 .nav-link {
     width: 100%;
+}
+
+#logo {
+    /*color:#d5d5d5;*/
 }
 
 .navbar-nav li a {
@@ -167,7 +165,7 @@ button:focus {
     color: #fff;
 }
 
-/*--------------------- S+M Res Styling Styling */
+/*---------------------------------------------- S+M Res Styling Styling */
 
 @media screen and (min-width: 576px) {
     .logo-container {
@@ -221,12 +219,12 @@ button:focus {
         width: 100%;
     }
 }
-/*--------------------- L Res Styling Styling - End */
+/*---------------------------------------------- L Res Styling Styling - End */
 
-/*--------------------- Nav - End */
+/*---------------------------------------------- Nav - End */
 
 
-/*------------------- Grid text-image-boxes*/
+/*---------------------------------------------- Grid text-image-boxes*/
     .home-grid-container {
         display: grid; 
         grid-template-columns: 50% 50%;
@@ -235,13 +233,11 @@ button:focus {
         display:flex;
         float: left;
         font-family: "Monserrat", sans-serif;
-        color: #d5d5d5;
+        color: #fff;
         letter-spacing: 4px;
     }
     .nested-feature-text {
         position: absolute;
-        /*z-index: 10;*/
-
         background: #24222d;
         padding: 30px;
         opacity: 0.5;
@@ -362,10 +358,10 @@ button:focus {
 
 @media (min-width: 768px) {
     .home-grid-container {
-        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        grid-template-columns: 16% 16% 16% 16% 16% 16%;
         justify-content: space-around;
-        row-gap: 60px;
-        padding: 30px;
+        gap: 8px;
+        padding: 8px;
     }
     .home-grid-container h1 {
         font-size:6vw;
@@ -375,7 +371,7 @@ button:focus {
     }
 
     .home-grid-item {
-        border-radius: 25px;
+        border-radius: 5px;
     }
     .text-box-top {
         grid-column: 1 / 4;
@@ -434,9 +430,9 @@ button:focus {
         margin-top: 50px;
     }
 }
-/*------------------- Grid text-image-boxes - End*/
+/*---------------------------------------------- Grid text-image-boxes - End*/
 
-/*------------------- Footer section */
+/*---------------------------------------------- Footer section */
 footer {
     position: absolute;
     font-family: "Monserrat", serif;
@@ -468,9 +464,9 @@ footer {
     }
 }
 
-/*------------------- Footer Section - End */
+/*---------------------------------------------- Footer Section - End */
 
-/*------------------- Results Page */
+/*---------------------------------------------- Results Page */
 .results { 
     padding:0em;
     margin: 0em;  
@@ -511,8 +507,9 @@ footer {
 }
  .subheader{ /*.dark-overlay h2*/
     text-transform: capitalize;
-    font-family: "Lora", sans-serif;
+    font-family: "Monserrat", sans-serif;
     color: #fff;
+    letter-spacing: 4px;
     font-size: 2.7em;
     
 }
@@ -532,11 +529,11 @@ footer {
 }
 
 
-/*------------------- Divider */
+/*---------------------------------------------- Divider */
 
 .h-divide {
-    border:2px solid #ffff00;
-    border-radius: 25px;
+    border:2px solid #fff;
+    border-radius: 5px;
    }
 
 @media (min-width: 576px){
@@ -550,7 +547,9 @@ footer {
     }
 }
 
-/*------------------- Results Grid image-quote */
+/*---------------------------------------------- Divider - End*/
+
+/*---------------------------------------------- Results Grid */
 
 .results-grid-container {
     display: grid; 
@@ -561,8 +560,8 @@ footer {
     display:flex;
     float: left;
     font-family: "Monserrat", sans-serif;
-    color: #ffff00;
-    letter-spacing: 4px;    
+    color: #fff;
+    letter-spacing: 4px;  
 }
 blockquote {
     margin: 20px;
@@ -572,64 +571,45 @@ blockquote span {
     color: #c6c0c0;
     font-size: 4vw;
 }
-.results-image1 {
+.results-image {
     width: 100%;
-    height: 300px;
-    position: relative;      
-    background-image: url('../images/transform1_lg_crop.jpg');
+    height:300px;
+    position: relative;  
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    overflow: hidden;
+    overflow: hidden;   
+}
+#result1 { 
+    background-image: url('../images/transform1_lg_crop.jpg');
 }
 
-.results-image2 {
-    width: 100%;
-    height: 300px;
-    position: relative;     
+#result2 { 
     background-image: url('../images/transform2_lg_crop.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
 }
-.results-image3 {
-    width: 100%;
-    height: 300px;
-    position: relative;    
+#result3 {  
     background-image: url('../images/transform3_lg_crop.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
 }
 
 .light-overlay {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.9);
 
 }
 .results-grid-item q {
     text-align: center;
     margin: 40px;
     font-family: "Lora", sans-serif;
-    color:#ffff00;
+    color:#fff;
     font-size: 3.5vw;
 }
 
 
 @media ( min-width:576px) {
-    .results-image1 {
+    .results-image {
         height: 381px;
     }
-    .results-image2 {   
-        height: 381px;
-    }
-    .results-image3 {        
-        height: 381px;
-    }
+
     .results-grid-item q {
         font-size: 4.5vw;
     }
@@ -637,31 +617,26 @@ blockquote span {
 
 @media (min-width: 768px) {
     .results-grid-container {
-        grid-template-columns: 49% 49%;
+        grid-template-columns: 49.5% 49.5%;
         justify-content: space-between;
-        row-gap: 60px;
-        padding: 30px;
+        gap: 8px;
+        padding: 8px;
     }
     .results-grid-item {
-        border-radius: 25px;
+        border-radius: 5px;
         height:300px;
+        display: inline-flex;
+        align-items: center;
     }
     .results-grid-item q {
         margin-top: 20px;
-        font-size:2.3vw;
+        font-size:2.0vw;
     }
     blockquote span {
         font-size: 2vw;
     }
-    .results-image1 {
+    .results-image {
         background-color: rgba(0,0,0,0.3);   
-    }
-    
-    .results-image2 {
-        background-color: rgba(0,0,0,0.3);     
-    }
-    .results-image3 {
-        background-color: rgba(0,0,0,0.3);    
     }
 }
 
@@ -670,32 +645,32 @@ blockquote span {
         font-size: 3.5em;
     }
     .results-grid-item {
-        border-radius: 25px;
+        border-radius: 5px;
         height:375px;
     }
 }
 
 @media (min-width: 1200px) {
     .results-grid-item q {
-        font-size: 2.1vw;
+        font-size: 1.8vw;
     }
 }
-/*------------------- Results Grid image-quote - End*/
+/*---------------------------------------------- Results Grid image-quote - End*/
 
-/*------------------- Accordian */
+/*----------------------------------------------Accordian */
 
 .card{
-    background-color: #24222d;
+    background-color: #000;
 
 }
 .card-header{
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #1f1d1d;
+    background-color: #000;
 }
 .card-body{
-
+    background-color: #161414;
 }
 #faq h2 {
     font-family: "Monserrat", sans-serif;
@@ -709,6 +684,11 @@ blockquote span {
     font-size: 1.2em;
     font-weight: 200;
 }
+#faq p span {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform:capitalize; 
+}
 
 @media (min-width:576px){
     .accordian#faq {
@@ -718,7 +698,7 @@ blockquote span {
 }
 @media (min-width:768px){
     .accordian#faq {
-        margin: 30px;
+        margin: 0 8px 8px 8px;
     }
 }
 @media (min-width:992px){
@@ -726,7 +706,7 @@ blockquote span {
         
     }
 }
-/*------------------- Accordian Icon Bar animation */
+/*---------------------------------------------- Accordian Icon Bar animation */
 
 .accordian-toggler{
     position:relative;
@@ -763,9 +743,9 @@ blockquote span {
     transform-origin: 0px 0px;
 }
 
-/*------------------- Accordian Icon Bar animation - End */
+/*---------------------------------------------- Accordian Icon Bar animation - End */
 
-/*------------------- call-to-action */
+/*----------------------------------------------call-to-action */
 
 .call-to-action { 
     padding:0em;
@@ -784,24 +764,24 @@ blockquote span {
     display: flex;
     overflow: hidden;
 }
-.yellow-overlay {
-    background-color: rgba(255,255,0,0.5);
+.gray-overlay {
+    background-color: rgba(198,192,192,0.5);
     width:100%;
     height:100%;
     display: inline-block;
     position: absolute;
 }
-.yellow-overlay h2{
+.gray-overlay h2{
     height: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     margin: 5px;
     font-family: "Monserrat", sans-serif;
-    color: #000080;
+    color: #141214;
     letter-spacing: 4px;
 }
-.yellow-overlay form{
+.gray-overlay form{
     height: 50%;
     display: flex;
     justify-content: flex-end;
@@ -809,59 +789,60 @@ blockquote span {
     margin-right: 5%;
 }
 
-.yellow-overlay button {
+.gray-overlay button {
     font-family: "Lora", sans-serif;
     background-color: #141214;
+    border-color: #141214;
     opacity: 1;
     color: #fff;
     font-size: 5vw;
-    border-radius: 25px;
+    border-radius: 5px;
     line-height: 66%;
     padding:30px;
 }
 @media (min-width: 576px) {
-    .yellow-overlay h2{
+    .gray-overlay h2{
         margin-left: 5%;
         margin-right: 10%;
     }
-    .yellow-overlay button {
+    .gray-overlay button {
         line-height: 40%;
         margin-top:10px;
         font-size: 2em;
     }
 }
 @media (min-width: 768px) {
-    .yellow-overlay h2{
+    .gray-overlay h2{
         margin-left: 10%;
     }
-    .yellow-overlay button{
+    .gray-overlay button{
         line-height: 30%;
     }
 }
 @media (min-width: 992px) {
     .call-to-action {
-        padding:30px;
+        /*padding:30px;*/
     }
     .cta-background {
-        border-radius: 25px;
+        border-radius: 5px;
     }
 }
 
 @media (min-width: 1055px) {
-    .yellow-overlay button{
+    .gray-overlay button{
        /* margin: 15% 10% 0 0;*/
     }
 }
 
 
 
-/*------------------- call-to-action - End */
+/*---------------------------------------------- call-to-action - End */
 
-/*------------------- Results - End */
+/*---------------------------------------------- Results - End */
 
-/*------------------- Training */
+/*---------------------------------------------- Training */
 
-/*------------------- training-headline */
+/*---------------------------------------------- training-headline */
 .training-headline {
     padding:0em;
     margin: 0em; 
@@ -874,33 +855,35 @@ blockquote span {
     background-image: url('../images/pt_renrow.jpeg');
 }
 
-/*------------------- training-headline - End */
+/*---------------------------------------------- training-headline - End */
 
-.training {
-    /*background-image: linear-gradient(to right, #000080 , #c6c0c0 5%, #c6c0c0 95%, #000080 );*/
-    background-color: #C6C0C0;
-    
-}
+
 .training-grid-container {
     display: grid;
     grid-template-columns: 100%;
-    padding: 15px 5%;
 }
 .training-grid-item {
     width:100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: #000;
-    font-family: "Lora", sans-serif;
-    margin: 15px 0px;
+    margin-top: 8px;
+    padding: 8px;
 }
-
-.text {
+.training-grid-item.text {
+    display:block;
+    font-family: "Lora", sans-serif;
     font-size: 1.2em;
 }
+.training-grid-item.image {
+    display: flex;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 img{
-    height: 150px;
+    height: 160px;
 }
 .training-grid-item i.fas {
     display:flex;
@@ -910,19 +893,9 @@ img{
 
 .one-to-one .benefits.image {
     background-image: url('../images/face2face.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
 }
-.online .squat.image {
+.online.squat.image {
     background-image: url('../images/squat_shadow.webp');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
 }
 .tracking.text ul {
     margin-left: -40px;
@@ -936,34 +909,41 @@ img{
 }
 @media (min-width: 768px) {
     .training {
-        background-image: linear-gradient(to right, #000080 , #c6c0c0 10%, #c6c0c0 90%, #000080 );
-        padding-bottom: 50px;
+        /*background-image: linear-gradient(to right, #000080 , #c6c0c0 10%, #c6c0c0 90%, #000080 );
+        padding-bottom: 50px;*/
     }
     .training-grid-container {
-        grid-template-columns: 25% 70%;
-        column-gap: 5%;
-        padding: 30px 10%;
+        grid-template-columns: 27% 72%;
+        gap: 8px;
+        padding: 8px;
     }
-    .training-grid-item {
-        font-size: 1.0rem;
+    .training-grid-item.text {
+        line-height: normal;
+        padding-right: 40px;
     }
-    
+    .training-grid-item i.fas.fa-laptop {
+        font-size: 8rem;
+    }
     .tracking.text li {
         height: 28%;
     }
 }
 @media (min-width: 992px) {
     .training-grid-container {
-        grid-template-columns: 22.75% 22.75% 22.75% 22.75%;
-        column-gap: 3%;
-        padding: 30px 10%;
+        grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+        gap: 8px;
+        padding: 8px;
+    }
+    .training-grid-item.text {
+        line-height: normal;
+        padding: 0 8px;
     }
     .tracking.text li {
         margin-bottom: 5%;
         height: auto;
     }
 }
-/*------------------- Training- price list  */
+/*---------------------------------------------- Training- price list  */
 
 .price-list {
     padding: 30px;
@@ -982,7 +962,6 @@ img{
 }
 .price-list .h-divide {
     border: 1px solid #ffffff;
-    /*border-radius: 25px;*/
     width: 67%;
     margin-left: 17%;
     margin-top: 20px;
@@ -999,7 +978,6 @@ img{
     list-style: none;
     font-size: 1.2em;
     margin-top: 10px;
-    /*margin-left: -40px;*/
 }
 .price-list-item> li::before {
     margin-left: 10px;
@@ -1018,14 +996,12 @@ img{
 }
 @media (min-width:992px) {
     .price-list {
-        margin: 0% 5%;
-        margin-bottom: 30px;
-        border-radius: 25px;
+        border-radius: 5px;
     }
-    .price-list-item{
+    #price-121 .price-list-item{
         height: 350px;
     }
-    #price-121 .price-list-item li {
+    .price-list-item li {
         font-size: 1.75vw;
     }
     #price-121 .price-button-area {
@@ -1034,18 +1010,15 @@ img{
     #price-online .price-list-item {
         height: 246px;
     }
-    #price-online .price-list-item  li {
-        font-size: 1.75vw;
-    }
 }
 @media (min-width:1330px) {
-    #price-121 .price-list-item li {
-        font-size: 1.6vw;
+    .price-list-item li {
+        font-size: 1.4vw;
     }
 }
-/*------------------- Training- Price List - End */
+/*---------------------------------------------- Training- Price List - End */
 
-/*------------------- training- CTA  */
+/*---------------------------------------------- training- CTA  */
 .training-cta {
     background-color: #ffff00;
     opacity: .8;
@@ -1106,7 +1079,7 @@ label {
 @media (min-width: 992px) {
     .training-cta {
         margin: 0 5%;  
-        border-radius: 25px;
+        border-radius: 5px;
     }
     .training-cta span {
         white-space: nowrap;
@@ -1118,14 +1091,14 @@ label {
         margin-left: 45%;
     }
 }
-/*------------------- training- CTA  */
+/*---------------------------------------------- training- CTA  */
 
-/*------------------- Training - End */
+/*---------------------------------------------- Training - End */
 
 
-/*------------------- Contact */
+/*---------------------------------------------- Contact */
 
-/*------------------- Contact info */
+/*---------------------------------------------- Contact info */
 
 .contact-details {
     color: #000;
@@ -1159,7 +1132,7 @@ iframe {
     font-size: 1.3em;
 }
 .contact-details span {
-    color: #000080;
+    color:#141214;
     font-size: 1.1em;
 }
 
@@ -1232,7 +1205,7 @@ iframe {
     }
     
     .contact-details {
-        border-radius: 25px;
+        border-radius: 5px;
     }
     .contact-title {
         width: 100%;
@@ -1258,7 +1231,7 @@ iframe {
     }
     iframe {
         height: 450px;
-        border-radius: 25px;
+        border-radius: 5px;
     }
     .contact-area form {
         padding: 20px 0px 0px 0px;
@@ -1275,9 +1248,9 @@ iframe {
         height: 200px;
     }
 }
-/*------------------- Contact info - End*/
+/*---------------------------------------------- Contact info - End*/
 
-/*------------------- instagram */
+/*---------------------------------------------- instagram */
 
 .instagram-hero img{
     width: 100%;
@@ -1312,6 +1285,6 @@ iframe {
     transition: width 1s;
 }
 
-/*------------------- instagram - End */
+/*---------------------------------------------- instagram - End */
 
-/*------------------- Contact- End */
+/*---------------------------------------------- Contact- End */

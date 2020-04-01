@@ -1,46 +1,75 @@
+logo 
 # Personal Training Webpage
 
 A front end of a personal training service web page using HTML &amp; CSS.
 
 [![Run on Repl.it](https://repl.it/badge/github/Domchap90/personal-training)](https://repl.it/github/Domchap90/personal-training)
 
-Contents
+## Contents
 
 
-Usage
-This project was merely intended to showcase my skills as a UI designer. My ability to style a web page using CSS
+
+## User Experience
+
+This project is merely intended to showcase my skills as a UI designer. My ability to build a web page and appropriately style 
 
 ## Wireframes
 
 ### Index page:
 
-<img src="assets/wireframes/index_page.png" alt="markups of index page">
+<img src="wireframes/index_page.png" alt="markups of index page">
 
 ### Results page:
 
-<img src="assets/wireframes/results_page.png" alt="markups of results page">
+<img src="wireframes/results_page.png" alt="markups of results page">
 
 ### Training page:
 
-<img src="assets/wireframes/training_page.png" alt="markups of training page">
+<img src="wireframes/training_page.png" alt="markups of training page">
 
 ### Contact page:
 
-<img src="assets/wireframes/contact_page.png" alt="markups of contact page">
+<img src="wireframes/contact_page.png" alt="markups of contact page">
 
-git
-## Installation
+## Testing
+    Description, Expected outcome, Result: pass/fail.
+### Functionality
 
+    -links
+        -outgoing
+        -internal
+        -anchor 
+    -test forms
+        -scripting (empty mandatory fields caught)
+        -defaults are populated
+        -Optimal formatting
+    -html + css (W3C tools)
+        -syntax errors
+        -appropriate color schemas/contrast.
+        -comply with W3C site.
+
+### Usability
+
+    -menus,buttons, links all clearly visible and consistent?
+    -All images contain alt text.
+    (test via Chalkmark, Clicktale, Clixpy or Feedback Army)
+
+### Compatibility
+    -Across different OS, browsers + resolutions.
+    - use NetMechanic
+
+## Code to Website
+    Set up to github pages link.
 
 ## Contributors
 
 I, Dominic Chaple am the sole contributor of this project.
 
-## Guides and Resources
+## Resources
 
-## API
+## Credits
 
-libraries used 
+libraries used.
 
 ## License
 
