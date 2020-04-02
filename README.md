@@ -11,7 +11,7 @@ A front end of a personal training service web page using HTML &amp; CSS.
 
 ## User Experience
 
-This project is merely intended to showcase my skills as a UI designer. My ability to build a web page and appropriately style 
+This project is merely intended to showcase my skills as a UI designer. My ability to appropriately style a web page whilst making it easy to navigate and fit for purpose. I thought it would be a good idea to build a web page for a personal training service. This would be a B2C website
 
 ## Wireframes
 

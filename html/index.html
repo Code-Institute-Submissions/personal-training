@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/d19a086ec7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
         type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
     <title>Personal Training</title>
 </head>
 
@@ -17,8 +17,8 @@
     <header class="bg-color-nav">
         <nav class="navbar navbar-expand-sm fluid-container">
             <div class="logo-container">
-                <a class="navbar-brand" href="index.html" target="_blank">
-                    <image src="assets/images/logo_white.png" alt="DC logo" id="logo"> 
+                <a class="navbar-brand" href="html/index.html" target="_blank">
+                    <image src="../assets/images/logo_white.png" alt="DC logo" id="logo">
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-menu"
@@ -31,13 +31,13 @@
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="active nav-link" href="index.html">
                             <div class="d-none d-sm-inline"><i class="fas fa-home"></i><br></div>
                             HOME
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="results.html" class="active nav-link">
+                        <a href="results.html" class="nav-link">
                             <div class="d-none d-sm-inline"><i class="fas fa-camera"></i><br></div>
                             RESULTS
                         </a>
@@ -60,20 +60,25 @@
     </header>
     <section class="home-boxes">
         <div class="home-grid-container">
-            <div class="home-grid-item text-box-top light-overlay">
-                <h1 class="display-4">DC Personal Training</h1>
-                <p class="d-none d-sm-inline"> Giving the <span>care</span> &amp; <span>attention</span>
+            <div class="home-grid-item text-box top dark-grid-overlay">
+                <div class="title-container">
+                    <h1 class="display-4">DC Personal Training</h1>
+                </div>
+                <p class="d-none d-lg-block"> Giving the <span>care</span> &amp; <span>attention</span>
                     you need to reach the body you <span>DESERVE</span>.
                 </p>
             </div>
-            <div class="home-grid-item image-box-top">
-                <img src="assets/images/pt_me.jpeg" alt="picture of personal trainer" id="home-image1">
+            <div class="home-grid-item image-box top">
+                <img src="../assets/images/pt_me.jpeg" alt="picture of personal trainer" id="home-image1">
             </div>
-            <div class="home-grid-item image-box-mid">
+            <div class="home-grid-item image-box mid">
                 <div class="nested-feature-text d-block d-md-none">
                     <a href="training.html#online">
-                        <div class="link-container">
-                            <h1 class="display-4"><span class="badge badge-secondary">New</span> Online Training</h1>
+                        <div class="nested-text">
+                            <div class="badge-h1-combo">
+                                <span class="badge badge-secondary">New</span>
+                                <h1 class="display-4">Online Training</h1>
+                            </div>
                             <p class="d-none d-sm-block d-md-none"> Start your program from as little as
                                 <span>£100</span>!
                             </p>
@@ -81,11 +86,14 @@
                     </a>
                 </div>
             </div>
-            <div class="home-grid-item text-box-mid light-overlay d-none d-md-inline">
+            <div class="home-grid-item text-box mid dark-grid-overlay d-none d-md-inline">
                 <a href="training.html#online">
-                    <div class="feature-text">
-                        <h1 class="display-4"><span class="badge badge-secondary">New</span> Online Training</h1>
-                        <p class="d-none d-md-inline"> Start your program from as little as <span>£100</span>!</p>
+                    <div class="separated-text">
+                        <div class="badge-h1-combo">
+                            <span class="badge badge-secondary">New</span>
+                            <h1 class="display-4">Online Training</h1>
+                        </div>
+                        <p class="d-none d-md-block"> Start your program from as little as <span>£100</span>!</p>
                     </div>
                 </a>
             </div>

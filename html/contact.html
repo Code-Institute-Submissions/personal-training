@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/d19a086ec7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
         type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
     <title>Personal Training</title>
 </head>
 
@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-sm fluid-container">
             <div class="logo-container">
                 <a class="navbar-brand" href="index.html" target="_blank">
-                    <image src="assets/images/logo_white.png" alt="dc logo" id="logo"> 
+                    <image src="../assets/images/logo_white.png" alt="dc logo" id="logo">
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-menu"
@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="results.html" class="active nav-link">
+                        <a href="results.html" class="nav-link">
                             <div class="d-none d-sm-inline"><i class="fas fa-camera"></i><br></div>
                             RESULTS
                         </a>
@@ -49,7 +49,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">
+                        <a href="contact.html" class="active nav-link">
                             <div class="d-none d-sm-inline"><i class="fas fa-comment"></i><br></div>
                             CONTACT
                         </a>
@@ -60,68 +60,84 @@
     </header>
     <section>
         <div class="headline-background">
-            <div class="dark-overlay">
+            <div class="headline-overlay">
                 <h1 class="display-4 header">CONTACT</h1>
             </div>
         </div>
     </section>
-    <div class="h-divide"></div>
-    <section class="contact-area bg-color-body">
-        <div class="contact-where">
-            <div class="contact-details" id="address">
-                <h2 class="contact-title subheader">How to find us</h2>
-                <div class="info">
-                    840 Crim Lane<br>
-                    Dayton<br>
-                    Ohio<br>
-                    45402<br>
-                </div>
-            </div>
-            <div id="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12268.851040675067!2d-84.21986997600011!3d39.757331217752785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884081342a6037a3%3A0xdba2e6001ef4ff9e!2sHouse%20of%20Bread!5e0!3m2!1sen!2sjp!4v1584949043705!5m2!1sen!2sjp"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0">
-                </iframe>
-            </div>
-        </div>
-        <div class="contact-details bg-color-section" id="contact-link">
-            <h2 class="contact-title subheader">Get in touch</h2>
-            <div class="info">
-                <ul>
-                    <li>
-                        Call us on
-                    </li>
-                    <li class="details-content">
-                        <span>01234 567 891</span>
-                    </li>
-                    <li>
-                        Email us
-                    </li>
-                    <li class="details-content">
-                        <span>queries@dcpersonaltraining.co.uk</span>
-                    </li>
-                </ul>
-                Or simply send us your query below:
-            </div>
 
-            <form>
-                <label for="fullname">Full Name*</label><br>
-                <input type="text" name="fullname" id="fullname" placeholder="John Smith" required><br>
-                <label for="email">Email Address*</label><br>
-                <input type="text" name="email" id="email" required placeholder="example@domain.com"><br>
-                <label for="query">Query</label><br>
-                <textarea name="query" id="query" required></textarea></label><br /><br />
-                <input name="submit" class="btn btn-primary" type="submit" id="submit" value="Enter">
-            </form>
+    <div class="h-divide"></div>
+
+    <section class="where-grid-container bg-color-body">
+        <!--<div class="where-grid-container">-->
+        <div class="where-grid-item dark-grid-overlay" id="address">
+            <div class="info">
+                <h2 class="contact-title subheader display-4">How to find us</h2>
+
+                840 Crim Lane<br>
+                Dayton<br>
+                Ohio<br>
+                45402<br>
+            </div>
         </div>
+        <div class="where-grid-item" id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12268.851040675067!2d-84.21986997600011!3d39.757331217752785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884081342a6037a3%3A0xdba2e6001ef4ff9e!2sHouse%20of%20Bread!5e0!3m2!1sen!2sjp!4v1584949043705!5m2!1sen!2sjp"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+        </div>
+        <!--</div>-->
+    </section>
+    <section class="contact-form bg-color-feature">
+        <!--<div class="contact-form" >-->
+        
+        <div class="info">
+            <h2 class="contact-title subheader display-4">Get in touch</h2>
+            <ul>
+                <li>
+                    Call us on
+                </li>
+                <li class="details-content">
+                    <span>01234 567 891</span>
+                </li>
+                <li>
+                    Email us
+                </li>
+                <li class="details-content">
+                    <div class="d-sm-none" id="narrow-email">
+                        <span>queries@</span><br><span>dcpersonaltraining</span><br><span>.co.uk</span>
+                    </div>
+                    <div class="d-410-block d-sm-none">
+                        <span>queries@</span><br><span>dcpersonaltraining.co.uk</span>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <span>queries@dcpersonaltraining.co.uk</span>
+                    </div>
+                </li>
+            </ul>
+            Or simply send us your query below:
+        </div>
+
+        <form>
+            <label for="fullname">Full Name*</label><br>
+            <input type="text" name="fullname" id="fullname" placeholder="John Smith" required><br>
+            <label for="email">Email Address*</label><br>
+            <input type="text" name="email" id="email" required placeholder="example@domain.com"><br>
+            <label for="query">Query</label><br>
+            <textarea name="query" id="query" required></textarea></label><br /><br />
+            <div class="form-button-area">
+                <input name="submit" class="btn btn-primary" type="submit" id="submit" value="Send">
+            </div>
+        </form>
+        <!--</div>-->
     </section>
     <div class="h-divide"></div>
     <section class='instagram'>
         <div class="instagram-hero">
-            <img src="assets/images/running_man_cropped.jpg" alt="Picture of man running">
+            <img src="../assets/images/running_man_cropped.jpg" alt="Picture of man running">
             <div class="text-overlay">
-                <a href="https://www.instagram.com/">
+                <a href="https://www.instagram.com/" target="_blank">
                     <h2 class="header">Follow me on <br>instagram <i class="fab fa-instagram"></i></h2>
                 </a>
             </div>
