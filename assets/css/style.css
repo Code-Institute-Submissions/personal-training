@@ -623,7 +623,7 @@ blockquote {
 blockquote span {
     font-family: "Monserrat", sans-serif;
     color: #c6c0c0;
-    font-size: 4vw;
+    font-size: 1em;
 }
 .results-image {
     width: 100%;
@@ -655,7 +655,7 @@ blockquote span {
     margin: 40px;
     font-family: "Lora", sans-serif;
     color:#fff;
-    font-size: 3.5vw;
+    font-size: 1em;
 }
 
 
@@ -664,8 +664,8 @@ blockquote span {
         height: 381px;
     }
 
-    .results-grid-item q {
-        font-size: 4.5vw;
+    blockquote {
+        font-size: 1.25em;
     }
 }
 
@@ -682,12 +682,11 @@ blockquote span {
         display: inline-flex;
         align-items: center;
     }
+    blockquote {
+        font-size: 1em;
+    }
     .results-grid-item q {
         margin-top: 20px;
-        font-size:2.0vw;
-    }
-    blockquote span {
-        font-size: 2vw;
     }
     .results-image {
         background-color: rgba(0,0,0,0.9);   
@@ -702,11 +701,14 @@ blockquote span {
         border-radius: 5px;
         height:375px;
     }
+    blockquote {
+        font-size: 1.25em;
+    }
 }
 
 @media (min-width: 1200px) {
-    .results-grid-item q {
-        font-size: 1.8vw;
+    blockquote {
+        font-size: 1.7vw;
     }
 }
 /*---------------------------------------------- Results Grid image-quote - End*/
@@ -719,6 +721,7 @@ blockquote span {
 }
 .card-header{
     display: inline-flex;
+    height: 82px;
     justify-content: space-between;
     align-items: flex-end;
     background-color: #000;
@@ -727,20 +730,20 @@ blockquote span {
     background-color: #161414;
 }
 #faq h2 {
+    align-self: flex-start;
     font-family: "Monserrat", sans-serif;
     color: #fff;
     letter-spacing: 2px;
-    font-size: 1.5em;
+    font-size: 1.0em;
 }
 #faq p {
     font-family: "Lora", sans-serif;
     color: #c6c0c0;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 200;
 }
 #faq p span {
     font-weight: bold;
-    font-size: 1.25em;
     text-transform:capitalize; 
 }
 
@@ -748,18 +751,27 @@ blockquote span {
     .accordian#faq {
         margin: 10px;
     }
-
+    #faq h2 {
+        font-size: 1.25em;
+    }
 }
 @media (min-width:768px){
     .accordian#faq {
         margin: 0 8px 8px 8px;
     }
 }
-@media (min-width:992px){
-    .accordian#faq {
-        
+@media (min-width: 828px) {
+    #faq h2 {
+        align-self: center;
     }
 }
+
+@media (min-width: 1200px) {
+    #faq h2 {
+        font-size: 1.7vw;
+    }
+}
+
 /*---------------------------------------------- Accordian Icon Bar animation */
 
 .accordian-toggler{
@@ -849,7 +861,7 @@ blockquote span {
     border-color: #24222d;
     opacity: 1;
     color: #fff;
-    font-size: 5vw;
+    font-size: 1em;
     border-radius: 5px;
     line-height: 66%;
     padding:30px;
@@ -862,7 +874,7 @@ blockquote span {
     .gray-overlay button {
         line-height: 40%;
         margin-top:10px;
-        font-size: 2em;
+        font-size: 1.25em;
     }
 }
 @media (min-width: 768px) {
@@ -879,9 +891,9 @@ blockquote span {
     }
 }
 
-@media (min-width: 1055px) {
+@media (min-width: 1200px) {
     .gray-overlay button{
-       /* margin: 15% 10% 0 0;*/
+       font-size: 1.7vw;
     }
 }
 
