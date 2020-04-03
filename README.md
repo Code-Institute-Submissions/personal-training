@@ -3,13 +3,21 @@ logo
 
 ## Description
 
-The front end of a personal training service web page. This project is mainly intended to showcase my skills as a User Interface Designer (UID). My intentions were to appropriately style a web page whilst making it easy to navigate and still be fit for purpose. 
+The front end of a personal training service web page. This project is mainly intended to showcase my skills as a User Interface Designer (UID). My intentions were to appropriately style a web page whilst making it easy to navigate and still be fit for purpose.
+
+The intended users of this readme document would be prospective employers or other students of web development/UI looking to gain inspiration of some sort. Emphasis should be placed on the fact that this is purely for educational purposes and I have no aspiration of using this as a commercial site. With that being stated, the pictures used are stock images suitable for non-commercial content. The people in the images are not actually clients of mine. Numbers and addresses aren't real. They were used to give a realistic impression for the aesthetic of the layout.
+
+I hope you enjoy my work and any feedback you may have would be greatly appreciated. 
 
 [![Run on Repl.it](https://repl.it/badge/github/Domchap90/personal-training)](https://repl.it/github/Domchap90/personal-training)
+
+Please visit via github pages:
+ https://domchap90.github.io/personal-training/
 
 ## Contents
 
 <ul>
+
 <li>User Experience</li>
 <li>WireFrames</li>
 <li>Testing</li>
@@ -21,7 +29,16 @@ The front end of a personal training service web page. This project is mainly in
 
 ## User Experience
 
+### Website Goals:
+
+
 This would be a business to customer (B2C) website. The appropriate considerations were made into marketing and accessibility to the general public.
+
+<ol>
+<li>Brand awareness</li>
+<li>Sell training sessions</li>
+<li>Increase client engagement retention</li>
+
 
 
 ## Wireframes

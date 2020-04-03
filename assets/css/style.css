@@ -625,6 +625,10 @@ blockquote span {
     color: #c6c0c0;
     font-size: 1em;
 }
+.name-container {
+    display: flex;
+    justify-content: flex-end;
+}
 .results-image {
     width: 100%;
     height:300px;
@@ -942,7 +946,7 @@ blockquote span {
     display:block;
     padding: 20px;
     font-family: "Lora", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 
 img{
@@ -1011,7 +1015,7 @@ img{
 .price-list .btn-secondary{
     color: #24222d;
     background-color: #c6c0c0;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 .price-list .btn-secondary:hover {
     color: #000;
@@ -1033,7 +1037,7 @@ img{
 }
 .price-list-item li {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.25em;
     margin-top: 10px;
 }
 .price-list-item> li::before {
@@ -1042,7 +1046,7 @@ img{
 
 .price-button-area {
     display:flex;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-end;
 }
 .btn-secondary{
@@ -1050,12 +1054,16 @@ img{
 }
 .price-list-item .nested-list li {
     padding-left: 30px;
+    font-size: 1em;
 }
 
 @media (min-width:576px) {
     .price-list-item ul, 
     .price-list-item .subheader {
         text-align: center;
+    }
+    .price-button-area {
+        justify-content: center;
     }
 }
 @media (min-width:992px) {
@@ -1076,60 +1084,80 @@ img{
     #price-online .price-list-item {
         height: 246px;
     }
+    .price-button-area {
+        justify-content: left;
+    }
 }
+@media (min-width:1070px) {
+    .price-list-item li {
+        font-size: 1.7vw;
+        margin-top: 7px;
+    }
 @media (min-width:1330px) {
     .price-list-item li {
         font-size: 1.6vw;
+        margin-top: 3px;
     }
 }
 /*---------------------------------------------- Training- Price List - End */
 
-/*---------------------------------------------- training- CTA  */
-.training-cta {
-    background-color: #fff;
+/*----------------------------------------------  Form-sheet  */
+
+.form-sheet {
     padding: 20px;
+    background-color: #fff;
 }
-.training-cta p {
-    font-size: 2em;
+.section-title {
+    font-family: "Monserrat" , sans-serif;
+    font-size: 2rem;
+    color: #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+.form-sheet ul {
+    list-style: none;
+    margin-left: -40px;
+}
+.form-sheet li {
+    font-size: 1rem;
+    margin-top: 2%;
+}
+.details-content {
+    display: flex;
+    justify-content: left;    
 }
 span.highlight {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
-.training-cta span.big{
-    color: #24222d;
-    font-size: 2em;
+#email-add {
+    text-transform: lowercase;
 }
-
 label {
-    font-family: "Monserrat" , sans-serif;
-    letter-spacing: 1px;
+    font-family: "Lora" , sans-serif;
     color: #24222d;
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 input, textarea {
     border-color: #000;
     border-width: 1px;
 }
-#fullname, #email, #availability {
+#fullname, #email, #availability, #times {
     width: 100%;
     padding: 12px 5px;
     margin: 8px 0;
     box-sizing: border-box;
   }
+  
 #query {
     width:100%;
     height:100px;
 }
-#times {
-    font-family: "Lora" , sans-serif;
-    letter-spacing: 1px;
-    font-size: 1.2em;
-}
+
 .form-button-area {
     width: 100%;
     display:flex;
-    justify-content: center;
+    justify-content: left;
 }
 .btn-primary {
     color: #fff;
@@ -1138,24 +1166,44 @@ input, textarea {
     font-family: "Lora" , sans-serif;
     font-size: 1.4em;       
    }
-@media (min-width: 768px) {
-    .training-cta {
-        padding: 4% 40px;
+
+@media (min-width: 576px) {
+    .form-sheet li {
+        font-size: 1.25rem;
     }
+
+@media (min-width:768px) {
+    .form-sheet {
+        padding: 4% 40px;
+    }  
+    .section-title {
+        font-size: 2.3rem;
+    } 
+
     #fullname, #email, #availability {
         width: 66%;
     }
-   
 }
-@media (min-width: 992px) {
-    .training-cta span {
-        white-space: nowrap;
+@media (min-width:992px) {
+    .section-title {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .form-sheet li {
+        font-size: 1.5rem;
     }
     #fullname, #email, #availability {
         padding: 12px 20px;   
     }
+    #query {
+        height: 200px;
+    }
 }
-/*---------------------------------------------- Training- CTA  */
+@media (min-width:1200px) {
+    .form-sheet {
+        padding: 4% 80px;
+    }  
+/*---------------------------------------------- Form - End*/
 
 /*---------------------------------------------- Training - End */
 
@@ -1173,26 +1221,18 @@ input, textarea {
     width: 100%;
     height: 320px;
     text-align: left;
-    /*overflow: hidden;*/
 }
 #address {
     padding: 4%;
     align-items: center;
 }
-
-.contact-title {
-    font-family: "Monserrat" , sans-serif;
-    font-size: 2.7rem;
-    margin-top: 1rem;
-    width: 100%;
-}
-#address .info {
+.where-grid-item .section-title {
     color: #fff;
-    font-size: 1.6rem;
 }
 .info { 
     font-family: "Lora", sans-serif;
-    font-size: 1.2em;
+    color: #fff;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
@@ -1221,12 +1261,12 @@ iframe {
         display: flex;
         
     }
-    
-    
+    .info {
+        font-size: 1.5rem;
+    }
     iframe {
         height: inherit; 
      }
-     
 }
 @media (min-width:1200px) {
     
@@ -1248,71 +1288,6 @@ iframe {
         
     }
 }
-
-/*---------------------------------------------- Contact Form  */
-
-.contact-form {
-    padding: 4%;
-}
-.contact-form .contact-title {
-    color: #000;
-}
-.details-content {
-    display: flex;
-    justify-content: center;
-}
-.info:not(span) {
-    font-size: 2.0em;
-}
-.contact-form span {
-    color: #24222d;
-    font-size: 2.0rem;
-}
-.d-410-block {
-    display:none;
-}
-.info ul {
-    list-style: none;
-    margin-left: -40px;
-}
-.contact-form li {
-    margin-top: 2%;
-}
-@media (min-width: 410px){
-    .d-410-block {
-        display: block;
-    }
-    #narrow-email {
-        display: none !important;
-    }
-}
-@media (min-width:768px) {
-    .contact-form {
-        padding: 4% 40px;
-    }   
-    .info:not(span) {
-        font-size: 1.4em;
-    }
-    .contact-form span {
-        font-size: 1.5em;
-    }
-}
-@media (min-width:992px) {
-    .contact-title {
-        width: 100%;
-        font-size: 2.5em;
-    }
-    .info:not(span) {
-        font-size: 1.5em;
-    }
-    .contact-form span {
-        font-size: 1.8em;
-    }
-    #query {
-        height: 200px;
-    }
-}
-/*---------------------------------------------- Contact Form - End*/
 
 /*---------------------------------------------- Contact Instagram */
 
