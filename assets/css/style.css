@@ -525,6 +525,9 @@ footer {
     padding:0em;
     margin: 0em;  
 }
+.results-headline .headline-background {
+    background-image: url('../images/overhead_press.jpg');
+}
 
 .headline-background {
     position: relative;
@@ -532,7 +535,6 @@ footer {
     padding-left: 0px;
     padding-right: 0px;
     height:150px;
-    background-image: url('../images/pt_renrow.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -918,12 +920,17 @@ blockquote span {
     height: 90%;
     align-items: flex-end;
 }
-.training-headline .headline-overlay h1, .training-headline .headline-overlay h2  {
+.training-headline1 .headline-overlay h1,
+ .training-headline1 .headline-overlay h2,
+ .training-headline2 .headline-overlay h2 {
     width: 95%;
     margin-left: 5%;
 }
-.training-headline .headline-background {
-    background-image: url('../images/pt_renrow.jpeg');
+.training-headline1 .headline-background {
+    background-image: url('../images/barbell_woman.jpg');
+}
+.training-headline2 .headline-background {
+    background-image: url('../images/phone_woman.jpeg');
 }
 
 /*---------------------------------------------- training-headline - End */
@@ -1093,6 +1100,7 @@ img{
         font-size: 1.7vw;
         margin-top: 7px;
     }
+}
 @media (min-width:1330px) {
     .price-list-item li {
         font-size: 1.6vw;
@@ -1168,11 +1176,15 @@ input, textarea {
    }
 
 @media (min-width: 576px) {
+
     .form-sheet li {
         font-size: 1.25rem;
     }
 
+}
+
 @media (min-width:768px) {
+
     .form-sheet {
         padding: 4% 40px;
     }  
@@ -1183,8 +1195,10 @@ input, textarea {
     #fullname, #email, #availability {
         width: 66%;
     }
+
 }
 @media (min-width:992px) {
+
     .section-title {
         width: 100%;
         font-size: 2.5rem;
@@ -1198,17 +1212,29 @@ input, textarea {
     #query {
         height: 200px;
     }
+
 }
 @media (min-width:1200px) {
+
     .form-sheet {
         padding: 4% 80px;
     }  
+
+}
 /*---------------------------------------------- Form - End*/
 
 /*---------------------------------------------- Training - End */
 
 
 /*---------------------------------------------- Contact */
+
+/*---------------------------------------------- Contact Headline */
+
+.contact-headline .headline-background {
+    background-image: url('../images/kettlebell.jpeg');
+}
+
+/*---------------------------------------------- Contact Headline - End */
 
 /*---------------------------------------------- Contact where */
 
@@ -1237,7 +1263,7 @@ input, textarea {
 }
 
 iframe {
-   position: relative ;
+   position: relative;
    height: inherit;
    width: 100%;
    background-color: #C6C0C0;
