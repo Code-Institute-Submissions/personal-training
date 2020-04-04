@@ -1,7 +1,7 @@
 
 <div style="width:100%;height:150px; padding: 30px;
     display: flex;justify-content:center;align-items:center; background-color: #000;">
-<img src="assets/images/logo_white.png" style="margin-right:10px; margin-bottom: 25px;" alt="DC logo"/><h1 class="display-4" style="font-size: 6em; font-family:&quot;Monserrat&quot;, sans-serif;color:#fff; "> Personal Training</h1>
+<image src="assets/images/logo_white.png" style="margin-right:10px; margin-bottom: 25px;" alt="DC logo"/><h1 class="display-4" style="font-size: 6em; font-family:&quot;Monserrat&quot;, sans-serif;color:#fff; "> Personal Training</h1>
 </div>
 
 # Personal Training Webpage
@@ -68,51 +68,107 @@ Having an online presence in the personal training world is everything. Especial
 
 ## Testing
 
-Description, Expected outcome, Result: pass/fail.
+Here I test the front end in 3 manners. First of all, probably considered the most fundamental test is whether or not the interactive elements of the website actually work as intended. This will include things like navigation links, buttons, forms being submittable with correct validation. Also to check syntax in the code itself.
+
+Secondly is the compatibility of the program. It's easy to assume it works from the computer that the project was written on but what about other devices? Large screen desktops? Mobile devices?  Furthermore one has to consider the different operating systems and even more so the array of browsers that could host the website. 
+
+The final manner of testing is Usability, does the website cater to individuals with learning disabilities? How easy is it to navigate from one section to another? Does the website look good? How consistent is the structure across the pages? 
 
 ### Functionality
 
 Link Test:
-There are 3 types of links that were used in my project. Namely external  (leave the website), internal (direct to another page) or anchor which directs to another region of the same page.
-<ol>
-<li></li>
-<li></li>
-<li></li>
-</ol>
-|           | Index      | Results    | Training   | Contact    |<br>
-| --------- |:----------:|:----------:|:----------:|<br>
-| External  |   
-| Internal  |    | right-aligned | $1600 |<br>
-| Anchor    |  | centered      |   $12 |<br>
-| Total     | are neat      |    $1 |<br>
+There are 3 types of links that were used in my project. Namely external  (leave the website), internal (direct to another page of the website) or anchor (directs to a specific region of a page). The default anchor '#' is the top of the same page.
 
 To ensure all the links were working, I had to count the number of opening 'a' and 'button' tags on each page. An easy way of doing this is to use ctrl+f and search tool in my IDE (for this project I used Visual Studio Code) and it would return result 1 out of the total count. Or it could return a 'No Results' message but this would be a problem on a website with multiple html pages.
-Index Link count:
- allowing me to skip straightsystematically  start from the top of each page and hover the cursor over each and every item/element scanning from left to right top to bottom. Waiting for some visual clue that the item was infact a link typically the cursor changes from a pointer to a hand image. Also i had set my <a> elements to in most cases change shade to a brighter instance of the color already in place. I would then proceed to click on the link and see what happened. 
 
-If an external link passed the test it would successfully direct me to another website and the page that was listed in the href attribute. 
-If an internal link 
-    -internal
-    -anchor 
--test forms
-    -scripting (empty mandatory fields caught)
-    -defaults are populated
-    -Optimal formatting
+#### Link Count
+
+index page contains
+ext 5, internal 5, anchor 2 (essentially same link but active in 2 different resolutions) - Total 12
+results page contains
+ext 5, int 5, anchor 1 (button link) - Total 11.
+training page contains
+ext 5, int 5 , anchor 5 - Total 15 (Note - 5 price button links were set as anchor tags due to there being no destination page)
+contact page contains
+ext 7, int 5  anchor 0. (Note- 1 ext link is on the googlemaps iframe) - Total 12.                 
+
+ Knowing where all the anchor tags and buttons are located, I would then systematically hover the cursor over every link and button on each page and note the outcome. I used the following check list to ensure each link was working correctly.
+
+#### Link/Button Checklist
+<ol>
+<li>Upon hovering the cursor over the link. The expected hover effect (as written in the stylesheet) takes place.</li>
+<li>The cursor changes from an arrow pointer icon to a hand icon.</li>
+<li>Upon clicking the link or button any active effect put in place should be now shown.</li>
+<li>The destination page or region is located correctly.</li>
+<li>Destination page is located in the appropriate tab.</li>
+</ol>
+
+### Expected Outcome
+
+<ol>
+<li>I had set my link elements to subtly change colour to a brighter instance of the colour already in place. All links typically went from grey color #c6c0c0 to bright white #fff upon hovering. Buttons had no hover effect.</li>
+<li>The cursor should indeed change from an arrow pointer icon to a pointing hand icon on all links and buttons.</li>
+<li>I didn't add any active effects.</li>
+<li>Should reach the location listed in the 'href' property of the anchor tag or the 'action' property of the form button.</li>
+<li>External links should be opened in a new tab. Internal in the same tab.</li>
+</ol>
+
+#### Result
+
+All 50 links passed.
+
+Form Test:
+There are only 2 forms on my site. They are both formatted under the same CSS rules in my stylesheet. So the consistency is 100% across all forms. Because this is a front end project only the button can't actually do as intended and submit forms as that would require a backend using JavaScript to use some business logic to store it into a database or potentially create email links. 
+
+At the moment, the only current features that should be able to pass tests are the validation of the submitted entries and the default entries being populated.
+
+For validation testing all possible permutations of entry boxes containing at least one character or more must be considered. In this case, one of the forms has 4 entry fields (training page) and the other 3 (contact page). The validation at the front end scope will only determine whether the fields are empty or not. It will not be able to assess whether the format of the entry matches a certain regex pattern for example emails containing no spaces and at least one '@' and '.' character. Further backend code is required in order for this type of testing to be carried out.
+
+The form button typically executes some action upon being clicked but as there is no back end the button will simply serve as an anchor link to the top of the page if all required entries are non-empty. I will call this scenario Successful validation or SV in short. Contrary to this Unsuccessful Validation (UV) will be where at least one field is found to be empty that should be non-empty. In this case, a pop up will appear notifying the user that from the top down the first empty required field it comes across must be non empty. 
+ 
+The contact page form is the simplest test so let's start with that one. All fields are required here therefore Succesful Validation should happen in one scenario only - Three non-empty entry boxes. In order to complete the test play out the following scenarios after each one hit the 'Send' button:
+
+Key: FullName=FN, Email=E, Query=Q, non-empty= ne, empty=e.
+
+FN:e,E:e,Q:e -> UV
+FN:ne,E:e,Q:e -> UV
+FN:ne,E:ne,Q:e -> UV
+FN:ne,E:ne,Q:ne -> SV
+
+#### Result
+
+Contact page form passed.
+
+Training page form has two SV cases with the availability field either empty or non-empty whilst all other required fields are non-empty.
+
+FN:e,E:e,A:e,G:e -> UV
+FN:ne,E:e,A:e,G:e -> UV
+FN:ne,E:ne,A:e,G:e -> UV
+FN:ne,E:ne,A:e,G:ne -> SV
+FN:ne,E:ne,A:ne,G:ne -> SV
+
+#### Result
+
+Training page form passed.
+
+
+
 -html + css (W3C tools)
     -syntax errors
     -appropriate color schemas/contrast.
     -comply with W3C site.
+
+
+### Compatibility
+
+    -Across different OS, browsers + resolutions.
+    - use NetMechanic
 
 ### Usability
 
     -menus,buttons, links all clearly visible and consistent?
     -All images contain alt text.
     (test via Chalkmark, Clicktale, Clixpy or Feedback Army)
-
-### Compatibility
-
-    -Across different OS, browsers + resolutions.
-    - use NetMechanic
 
 ## Code to Website
 
